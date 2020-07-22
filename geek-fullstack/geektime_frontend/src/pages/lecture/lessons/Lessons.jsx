@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Header from './header/Header';
-import Path from './learn-path/Path';
-import './Lessons.css';
+import Path from './learn-path/Path'; 
 import Direction from './lesson-direction/Direction';
 import AllLessons from './allLessons/allLessons';
+import {Tab} from './Lessons.style';
 
 export default function Lessons() {
     const [pathList, setPathList] = useState([]);
@@ -13,11 +13,11 @@ export default function Lessons() {
             .then(res => setPathList(res));
     }, []) 
     return (
-        <div className="lessons_wrapper">
+        <Tab>
             <Header />
             <Path data={pathList.STUDY_PATH_TITLE} />
             <Direction data={pathList.LESSONS_DIRECTION_TITLE} />
             <AllLessons data={pathList.ALL_LESSONS_LESSONS}/>
-        </div>
+        </Tab>
     )
 }
