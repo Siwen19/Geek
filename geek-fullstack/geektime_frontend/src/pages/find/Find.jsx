@@ -2,7 +2,9 @@ import React from 'react';
 
 function Find() {
     return (
-        <div>Find</div>
+        <div>
+            <span className="iconfont">&#xe648;</span>
+        </div>
     )
 }
 

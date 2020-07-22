@@ -1,0 +1,35 @@
+.study-contents {
+    margin-top: 110px;
+    background-color:white;
+    height: 500px;
+    overflow: scroll;
+}
+
+.study-contents-title {
+    padding-left: 12px;
+    font-size: 17px;
+}
+
+.study-contents .type {
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+.study-contents .practice {
+    padding-top: 12px;
+}
+
+.study-contents .type2 {
+    padding-left: 12px;
+    padding-top: 30px;
+}
+
+.study-contents .type3 {
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+.perclass {
+    margin-bottom: 50px;
+}
+

@@ -1,0 +1,38 @@
+.pclass-wrapper {
+    width: 100%;
+    height: 90px;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    padding-top: 12px;
+    margin-bottom: -20px;
+}
+
+.pclass-image {
+    width: 120px;
+    /* height: 50px; */
+    /* height: 40px; */
+    padding-left: 12px;
+}
+
+.pcl-info {
+    padding-left: 40px;
+    font-size: 14px;
+}
+
+.pcl-total-time {
+    padding-top: 5px
+}
+
+.pcl-info .pcl-type {
+    margin-top: 12px;
+    padding-top: 25px;
+}
+
+.pcl-teacher-job {
+    font-size: 12px;
+}
+
+.pcl-finished {
+    font-size: 12px;
+}

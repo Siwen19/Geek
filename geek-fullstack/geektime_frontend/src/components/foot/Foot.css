@@ -1,0 +1,41 @@
+
+
+.gk-foot {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgb(254, 254, 254);
+  border-top: 1px solid #dddddd;
+  margin-top: 10px;
+}
+
+.gk-foot--item {
+  flex: 1;
+  text-align: center;
+  padding: 8.5px 6px 6px;
+  font-size: 0;
+  text-decoration: none;
+  color: #a2a2a2;
+}
+
+.gk-foot--item > span {
+  display: inline-block;
+  position: relative;
+}
+
+.gk-foot--icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  overflow: hidden;
+  margin-bottom: 3.5px;
+}
+
+.gk-foot--label {
+  font-size: 10px;
+  text-align: center;
+  line-height: 8px;
+  margin-bottom: 8px;
+}

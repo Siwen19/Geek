@@ -1,0 +1,9 @@
+.article-wrapper {
+    width: 100vw;
+    margin-top: 1vh;
+    background-color: #fff;
+}
+
+.article-wrapper .content-wrapper:last-child {
+    border-bottom: none;
+}

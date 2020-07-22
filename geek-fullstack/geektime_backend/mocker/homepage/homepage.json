@@ -1,0 +1,64 @@
+{
+    "column_one": [{
+            "image": "a",
+            "title": "账户",
+            "money": "0.00"
+        },
+        {
+            "image": "b",
+            "title": "我的课程"
+        },
+        {
+            "image": "c",
+            "title": "我的订单"
+        }
+    ],
+    "column_two": [{
+            "image": "d",
+            "title": "商城订单"
+        },
+        {
+            "image": "e",
+            "title": "我的拼团"
+        },
+        {
+            "image": "f",
+            "title": "我的证书"
+        }
+    ],
+    "column_three": [{
+        "image": "g",
+        "title": "我的每日一课"
+    }],
+    "column_four": [{
+            "image": "h",
+            "title": "礼券",
+            "backImg": 1
+        },
+        {
+            "image": "i",
+            "title": "课程赠送"
+        },
+        {
+            "image": "j",
+            "title": "分享有赏"
+        },
+        {
+            "image": "k",
+            "title": "邀请好友"
+        },
+        {
+            "image": "l",
+            "title": "关注服务号领币"
+        }
+    ],
+    "column_five": [{
+            "image": "m",
+            "title": "帮助与反馈"
+        },
+        {
+            "image": "n",
+            "title": "设置"
+        }
+    ]
+}

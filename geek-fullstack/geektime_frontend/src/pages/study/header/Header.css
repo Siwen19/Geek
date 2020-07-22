@@ -1,0 +1,78 @@
+
+.header-title {
+    display: flex;
+    position: relative;
+    
+}
+.header-content {
+  position: relative;
+  height: 40px;
+  display: flex;
+  width: 70%;
+  
+}
+.header-content-text {
+  padding-left: 12px;
+  font-size: 18px;
+  
+}
+.header-content-svg {
+  margin-top: 2px;
+  padding-left: 2px;
+  position: absolute;
+  margin-left: 192px;
+}
+.header-title .iconfont {
+    font-size: 20px;
+    right: 0;
+    position: absolute;
+    padding: 12px;
+}
+.header-title-text {
+    padding: 12px;
+    font-size: 20px;
+}
+.header-foot {
+    background-color: rgb(254, 254, 254);
+    display: flex;
+    justify-content: space-around;
+  }
+.header-foot .header-foot-item1 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+.header-foot .header-foot-item1 .fitem1-text {
+    margin: 3px auto;
+  }
+  
+  .header-foot .header-foot-item2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+.header-foot .header-foot-item2 .fitem2-text {
+    margin: 3px auto;
+  }
+  
+  .header-foot .header-foot-item3 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+.header-foot .header-foot-item3 .fitem3-text {
+    margin: 3px auto;
+  }
+  
+  .header-foot .header-foot-item4 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+.header-foot .header-foot-item4 .fitem4-text {
+    margin: 3px auto;
+  }
+
+  span {
+      text-align: center;
+  }

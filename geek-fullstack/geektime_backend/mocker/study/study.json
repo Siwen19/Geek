@@ -1,0 +1,42 @@
+{
+    "practice":[{
+        "image": "study1",
+        "title": "7天掌握算法面试必考知识点",
+        "total": 14,
+        "time": 3,
+        "type": "永久观看"
+    }],
+    "lessons":[{
+        "image": "study2",
+        "title": "数据结构与算法之美",
+        "total": 80,
+        "finished": 7
+    },{
+        "image": "study2",
+        "title": "算法面试通关40讲",
+        "total": 62,
+        "finished": 5
+    }],
+    "perclass":[{
+        "image": "study4",
+        "title": "AR在直播系统中的应用",
+        "teacher": "李超",
+        "job": "沪江网架构师",
+        "finished": 1,
+        "time": "41:46"
+    },{
+        "image": "study5",
+        "title": "Flutter:最新进展和未来展望",
+        "teacher": "董韬",
+        "job": "Flutter高级程序员",
+        "finished": 0,
+        "time": "45:38"
+    },{
+        "image": "study6",
+        "title": "Git分支工作流",
+        "teacher": "朱维刚",
+        "job": "前阿里云资深产品经理",
+        "finished": 0,
+        "time": "06:53" 
+    }]
+}

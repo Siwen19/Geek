@@ -1,0 +1,30 @@
+.content-wrapper {
+    width: 90vw;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5vw;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-wrapper .data-image {
+    width: 7vw;
+    height: 4vh;
+}
+
+.content-wrapper .data-title {
+    width: 90vw;
+    margin-left: 2vw;
+}
+
+.content-wrapper .remain-money {
+    margin-right: 2vw;
+    color: rgb(175, 175, 175);
+    font-size: 4vw;
+}
+
+.content-wrapper .right-image {
+    width: 6vw;
+    height: 3vh;
+}

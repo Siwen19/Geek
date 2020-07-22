@@ -1,0 +1,26 @@
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+}
+
+.header {
+    height: 44px;
+    line-height: 44px;
+    width: 100vw;
+    font-size: 18px;
+    position: fixed;
+    text-align: center;
+    background-color: #fff;
+    /* position: relative; */
+    padding: 0 15px;
+}
+
+.header-letter img {
+    position: absolute;
+    right: 10.38596vw;
+    width: 42px;
+    height: 42px;
+}
