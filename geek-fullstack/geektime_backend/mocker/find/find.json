@@ -1,0 +1,53 @@
+{
+    "shop":[{
+        "image": "shop1",
+        "note1": "充￥500 得 ￥580",
+        "note2": "限时免费得好礼",
+        "price": 500
+    },{
+        "image": "shop2",
+        "note1": "图谱合集特惠",
+        "note2": "下单就返现",
+        "price": 119
+    },{
+        "image": "shop3",
+        "note1": "极客时间VIP年卡",
+        "note2": "365畅学专栏视频课",
+        "price": 2999
+    }],
+
+    "gku":[{
+        "image": "gku1",
+        "type": "算法训练营",
+        "note1": "70天刻意练习，彻底攻克算法",
+        "teacher": "覃超",
+        "job": "前Facebook工程师",
+        "time": "第13期 7月27日开课"
+    },{
+        "image": "gku2",
+        "type": "前端进阶训练营",
+        "note1": "5个月进阶资深前端工程师",
+        "teacher": "Winter老师",
+        "job": "前手淘高级工程师",
+        "time": "第3期 7月27日开课" 
+    },{
+        "image": "gku3",
+        "type": "Python进阶训练营",
+        "note1": "70天实战训练，进阶Python",
+        "teacher": "尹会生",
+        "job": "西山运维总监",
+        "time": "第2期 7月20日开课"  
+    },{
+        "image": "gku4",
+        "type": "架构师训练营",
+        "note1": "100天高强度训练",
+        "teacher": "李智慧",
+        "job": "前阿里&Inter架构师",
+        "time": "第1期 9月14日开课"   
+    }],
+
+    "class":[{
+        
+    }]
+    
+}
