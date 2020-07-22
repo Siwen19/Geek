@@ -1,6 +1,7 @@
 import React from 'react'; 
-import './Direction.css';
+import './Direction.style.js';
 import Item from './item/Item';
+import {ContentWrapper} from './Direction.style';
 import {Wrap, Tab, TabLeftItem, TabRightItem} from '../style';
 
 
@@ -18,9 +19,9 @@ export default function Direction(props) {
                 查看全部
                 </TabRightItem> 
             </Tab>
-            <div className="_2NTB3NCG_0">
+            <ContentWrapper>
                 {item}
-            </div> 
+            </ContentWrapper> 
         </Wrap>
     )
 };
