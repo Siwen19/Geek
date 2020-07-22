@@ -1,3 +1,139 @@
 {
-    
+    "STUDY_PATH_TITLE": [{
+            "job": "Java工程师",
+            "lessons_nums": "19门课程",
+            "image": "asserts/engineer_one.jpg"
+        },
+        {
+            "job": "Python工程师",
+            "lessons_nums": "17门课程",
+            "image": "asserts/engineer_two.jpg"
+        },
+        {
+            "job": "计算机基础知识",
+            "lessons_nums": "10门课程",
+            "image": "asserts/engineer_three.jpg"
+        },
+        {
+            "job": "前端工程师",
+            "lessons_nums": "22门课程",
+            "image": "asserts/engineer_four.jpg"
+        },
+        {
+            "job": "测试工程师",
+            "lessons_nums": "15门课程",
+            "image": "asserts/engineer_five.jpg"
+        }
+    ],
+    "LESSONS_DIRECTION_TITLE": [
+        "计算机专业课",
+        "后端 & 架构",
+        "前端 & 移动",
+        "产品 & 运营",
+        "人工智能 & 大数据",
+        "运营 & 测试",
+        "管理 & 效率",
+        "职场软技能",
+        "面试专场"
+    ],
+    "ALL_LESSONS_TITLE": [{
+        "title": "全部课程",
+        "more": ""
+    }],
+    "ALL_LESSONS_SUBTITLE": [{
+        "sections": [
+            "课程形式",
+            "订阅状态",
+            "上新"
+        ]
+    }],
+    "ALL_LESSONS_LESSONS": [{
+            "teach_title": "Vim 实用技巧必知必会",
+            "teacher": "吴咏炜",
+            "status": "前 Intel 资深软件架构师",
+            "lessons": "24讲",
+            "learners": "484人已学习",
+            "price": "¥19.9",
+            "cost": "¥99",
+            "provide": "试读",
+            "image": "asserts/teacher_one.jpg"
+        },
+        {
+            "teach_title": "Selenium自动化测试实践",
+            "teacher": "郭宏志",
+            "status": "享学志成科技创始人兼CEO",
+            "lessons": "70讲",
+            "learners": "1128人已学习",
+            "price": "¥29.9",
+            "cost": "¥129",
+            "provide": "试看",
+            "image": "asserts/teacher_two.jpg"
+        },
+        {
+            "teach_title": "Web安全攻防实战",
+            "teacher": "王昊天",
+            "status": "螣龙安科技创始人兼CEO",
+            "lessons": "80讲",
+            "learners": "2222人已学习",
+            "price": "¥29.9",
+            "cost": "¥129",
+            "provide": "试看",
+            "image": "asserts/teacher_three.jpg"
+        },
+        {
+            "teach_title": "OAuth 2.0实战课",
+            "teacher": "王新栋",
+            "status": "京东资深架构师",
+            "lessons": "16讲",
+            "learners": "2198人已学习",
+            "price": "¥9.9",
+            "cost": "¥68",
+            "provide": "试读",
+            "image": "asserts/teacher_four.jpg"
+        },
+        {
+            "teach_title": "跟月影学可视化",
+            "teacher": "月影",
+            "status": "奇虎360奇舞团团长，可视化UI框架SpriteJS核心开发者，《JavaScript王者归来》作者",
+            "lessons": "45讲",
+            "learners": "3761已学习",
+            "price": "¥29.9",
+            "cost": "¥129",
+            "provide": "试读",
+            "image": "asserts/teacher_five.jpg"
+        },
+        {
+            "teach_title": "分布式系统案例课",
+            "teacher": "杨波",
+            "status": "前携程/拍拍贷技术总监，微服务技术专家",
+            "lessons": "55讲",
+            "learners": "2979已学习",
+            "price": "¥29.9",
+            "cost": "¥129",
+            "provide": "试看",
+            "image": "asserts/teacher_six.jpg"
+        },
+        {
+            "teach_title": "正则表达式入门课",
+            "teacher": "涂伟忠",
+            "status": "高级研发工程师",
+            "lessons": "17讲",
+            "learners": "3232已学习",
+            "price": "¥9.9",
+            "cost": "¥68",
+            "provide": "试读",
+            "image": "asserts/teacher_seven.jpg"
+        },
+        {
+            "teach_title": "TensorFlow 2项目进阶实战",
+            "teacher": "彭靖田",
+            "status": "Google Developer Expert、《TensorFlow 快速入门与实战》作者",
+            "lessons": "48讲",
+            "learners": "2001已学习",
+            "price": "¥29.9",
+            "cost": "¥129",
+            "provide": "试看",
+            "image": "asserts/teacher_eight.jpg"
+        }
+    ]
 }

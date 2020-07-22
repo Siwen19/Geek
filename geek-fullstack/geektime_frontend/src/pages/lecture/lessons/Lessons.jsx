@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Header from './header/Header';
-import Path from './learn-path/Path';
-import {Tab} from './Lessons.style'; 
+import Path from './learn-path/Path'; 
 import Direction from './lesson-direction/Direction';
 import AllLessons from './allLessons/allLessons';
+import {Tab} from './Lessons.style';
 
 export default function Lessons() {
     const [pathList, setPathList] = useState([]);
