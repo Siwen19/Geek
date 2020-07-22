@@ -13,6 +13,7 @@ function App() {
   return (
     <Fragment>
       <BrowserRouter>
+      hello world
         <Route path="/" exact component={Find} />
         <Route path="/horde" component={Horde} />
         <Route path="/study" component={Study} />
