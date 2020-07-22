@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('../../asset/findIf/iconfont.eot');
+    src: url('../../asset/findIf/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../../asset/findIf/iconfont.woff2') format('woff2'),
+        url('../../asset/findIf/iconfont.woff') format('woff'),
+        url('../../asset/findIf/iconfont.ttf') format('truetype'),
+        url('../../asset/findIf/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
