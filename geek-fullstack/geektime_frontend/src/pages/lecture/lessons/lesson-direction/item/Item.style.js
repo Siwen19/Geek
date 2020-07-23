@@ -16,12 +16,9 @@ export const Tab = styled.div `
     color: #4c4c4c;
     word-break: break-all;
     line-height: 1.6;
-    overflow: hidden;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    overflow: hidden; 
     background: #f6f7fb;
-    border-radius: 6px;
-    -webkit-box-sizing: border-box;
+    border-radius: 6px; 
     box-sizing: border-box;
     text-align: center;
     font-family: "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", Helvetica, sans-serif;
