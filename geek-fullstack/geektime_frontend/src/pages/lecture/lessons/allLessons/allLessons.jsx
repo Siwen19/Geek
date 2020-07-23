@@ -1,17 +1,13 @@
 import React from 'react'; 
-import Item from './item/Item';
-import { useRef } from 'react';
-import { useEffect } from 'react';
-// import Scroll from '../../common/scroll/Scroll';
-import { useState } from 'react'; 
+import Item from './item/Item'; 
+// import Scroll from '../../common/scroll/Scroll'; 
 import { Wrap, TabNav, InnerDiv, InnerItem, NavWrapper, ContentItem } from './allLessons.style';
 import { TabLesson, TabLeftItem } from '../style';
 
 export default function All(props) {
     const { data } = props;
     const newData = data !== undefined ? data : [];
-    const item = newData.map((ele, index) => <Item data={ele} key={index} />)
-    const filterValue = useRef();
+    const item = newData.map((ele, index) => <Item data={ele} key={index} />) 
     return (
         <Wrap>
             <TabLesson>

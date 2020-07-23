@@ -2,16 +2,14 @@ import styled from "styled-components";
 
 export const Tab = styled.div `
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
     padding: 0 15px;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    display: flex; 
     align-items: center;
-    background: #fff;
-    -webkit-box-shadow: inset 0px -1px 1px -1px #ccc;
+    background: #fff; 
     box-shadow: inset 0px -1px 1px -1px #ccc;
     font-family: "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", Helvetica, sans-serif;
     & > a {

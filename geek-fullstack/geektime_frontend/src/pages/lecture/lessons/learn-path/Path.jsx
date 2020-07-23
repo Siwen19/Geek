@@ -4,8 +4,7 @@ import Item from './item/Item';
 import {Wrap, Content} from './Path.style';
 import {Tab, TabLeftItem, TabRightItem} from '../style';
 
-export default function Path(props) { 
-    console.log(1); 
+export default function Path(props) {  
     const {data} = props;
     const newData = data !== undefined ? data : [];
     const item = newData.map((ele, index) => <Item data={ele} key={index} />)
