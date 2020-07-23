@@ -1,5 +1,5 @@
 {
-    "column_one": [{
+    "COLUMN_ONE": [{
             "image": "a",
             "title": "账户",
             "money": "0.00"
@@ -13,7 +13,7 @@
             "title": "我的订单"
         }
     ],
-    "column_two": [{
+    "COLUMN_TWO": [{
             "image": "d",
             "title": "商城订单"
         },
@@ -26,11 +26,11 @@
             "title": "我的证书"
         }
     ],
-    "column_three": [{
+    "COLUMN_THREE": [{
         "image": "g",
         "title": "我的每日一课"
     }],
-    "column_four": [{
+    "COLUMN_FOUR": [{
             "image": "h",
             "title": "礼券",
             "backImg": 1
@@ -52,7 +52,7 @@
             "title": "关注服务号领币"
         }
     ],
-    "column_five": [{
+    "COLUMN_FIVE": [{
             "image": "m",
             "title": "帮助与反馈"
         },

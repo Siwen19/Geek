@@ -4,19 +4,18 @@ import './App.css';
 import Find from './pages/find/Find';
 import Horde from './pages/horde/Horde';
 import Study from './pages/study/Study';
-import Lecture from './pages/lecture/lessons/Lessons';
+import Lecture from './pages/lecture/lessons/index';
 import HomePage from './pages/homepage/HomePage';
-import Foot from './components/foot/Foot';
+import Foot from './components/foot/Foot';   
+import {Provider} from 'react-redux';
+import {store} from './store/store';
 
 
 function App() {
   return (
-    <Fragment>
-<<<<<<< HEAD
-      <BrowserRouter> 
-=======
+      <Provider store={store}> 
+    <Fragment>  
       <BrowserRouter>
->>>>>>> 03b40db0c1a5f978e8d1d3a24ad3a13f473269d0
         <Route path="/" exact component={Find} />
         <Route path="/horde" component={Horde} />
         <Route path="/study" component={Study} />
@@ -25,8 +24,8 @@ function App() {
         <Redirect to="/"/>
         <Foot />
         </BrowserRouter> 
-    </Fragment>
-
+    </Fragment> 
+        </Provider> 
   );
 }
 

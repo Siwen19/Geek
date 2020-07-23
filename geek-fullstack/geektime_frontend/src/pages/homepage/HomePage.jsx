@@ -16,7 +16,7 @@ export default function HomePage() {
         <Article data={homeList[ele]} key={i} />
     );
     return (
-        <div className='Home_Wrapper'>
+        <div className='Home_Wrapper'> 
             <Header />
             <Navigation />
             {aticle}

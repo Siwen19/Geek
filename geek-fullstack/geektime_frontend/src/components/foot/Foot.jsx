@@ -5,7 +5,8 @@ class Foot extends Component {
 
     render() {
         return (
-            <div className="gk-foot">
+            
+            <div className="gk-foot"> 
                 <Link to="/" className="gk-foot--item gk-foot--item__on">
                     <span className="gk-foot--icon iconfont">&#xe726;</span>
                     <p className="gk-foot--label">发现</p>

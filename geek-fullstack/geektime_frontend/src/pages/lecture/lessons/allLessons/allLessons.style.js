@@ -45,4 +45,5 @@ export const InnerDiv = styled.div `
 `;
 export const ContentItem = styled.div `
     padding: 0 15px;
+    margin-bottom: 9vh; 
 `;

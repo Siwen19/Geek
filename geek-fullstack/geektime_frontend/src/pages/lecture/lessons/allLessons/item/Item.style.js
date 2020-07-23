@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div ` 
     display: flex;
     margin-bottom: 27px;
+    z-index: -1;
 `;
 export const ImageWrapper = styled.div ` 
     position: relative;
@@ -14,7 +15,7 @@ export const ImageWrapper = styled.div `
         width: 82px;
         height: 108px;
         background-color: #eaeaea;
-        border-radius: 4px;
+        border-radius: 4px; 
     }
 `;
 export const TitleWrapper = styled.div `  
