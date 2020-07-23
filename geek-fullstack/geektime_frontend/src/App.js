@@ -12,11 +12,7 @@ import Foot from './components/foot/Foot';
 function App() {
   return (
     <Fragment>
-<<<<<<< HEAD
-      <BrowserRouter> 
-=======
       <BrowserRouter>
->>>>>>> 03b40db0c1a5f978e8d1d3a24ad3a13f473269d0
         <Route path="/" exact component={Find} />
         <Route path="/horde" component={Horde} />
         <Route path="/study" component={Study} />
