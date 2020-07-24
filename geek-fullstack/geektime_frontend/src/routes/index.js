@@ -9,8 +9,8 @@ import footLayout from '../components/foot/Foot';
 import userLayout from '../pages/homepage/HomePage';
 import Header from '../pages/lecture/lessons/header/Header';
 import studyLayout from '../pages/study/Study';
+import Account from '../pages/homepage/account/account'; 
 
-const Recommend = () => <div>fdfdfdf</div>;
 export default  [
     {
       component: BlankLayout,
@@ -57,10 +57,17 @@ export default  [
               },
               {
                 path: '/user',
-                component: userLayout
-              }
+                component: userLayout,
+                routes: [
+                  {
+                    path: '/user/account',
+                    component: Account
+                  }
+                ] 
+              },
+              
           ]
         }
       ]
-    }
+    }, 
 ]

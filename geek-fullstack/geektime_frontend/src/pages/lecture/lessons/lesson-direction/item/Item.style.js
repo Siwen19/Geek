@@ -28,9 +28,5 @@ export const Tab = styled.div `
     }
     :nth-child(3n) {
         margin-right: 0; 
-    }
-    :nth-child(2n-1) {
-        color: #ae7145;
-        background: #fbf5ee;
-    }
+    } 
 `;

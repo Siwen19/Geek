@@ -4,22 +4,22 @@ import Header from './header/Header';
 import Navigation from './navigation/Navigation';
 import Article from './article/Article';
 
-export default function HomePage() {
-    const [homeList, setState] = useState([]);
-
+export default function HomePage(props) {
+    const { route } = props; 
+    const [homeList, setState] = useState([]); 
     useEffect(() => {
         fetch('http://localhost:8080/rest/homepage.json')
             .then(data => data.json())
             .then(res => setState(res))
     }, [])
     const aticle = Object.keys(homeList).map((ele, i) =>
-        <Article data={homeList[ele]} key={i} />
+        <Article data={homeList[ele]} path={route} key={i} />
     );
     return (
-        <div className='Home_Wrapper'> 
+        <div className='Home_Wrapper'>  
             <Header />
             <Navigation />
-            {aticle}
+                {aticle} 
         </div>
     );
 }   

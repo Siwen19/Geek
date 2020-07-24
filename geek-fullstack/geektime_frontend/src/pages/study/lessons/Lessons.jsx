@@ -1,7 +1,6 @@
 import React from 'react'
 import './Lessons.css'
-export default function Lessons(props) {
-    console.log(props);
+export default function Lessons(props) { 
     const { l } = props;
     return (
         <div className="lessons-wrapper">

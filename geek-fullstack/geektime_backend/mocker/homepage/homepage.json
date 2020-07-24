@@ -2,63 +2,77 @@
     "COLUMN_ONE": [{
             "image": "a",
             "title": "账户",
-            "money": "0.00"
+            "money": "0.00",
+            "id": "account"
         },
         {
             "image": "b",
-            "title": "我的课程"
+            "title": "我的课程",
+            "id": "lessons"
         },
         {
             "image": "c",
-            "title": "我的订单"
+            "title": "我的订单",
+            "id": "order" 
         }
     ],
     "COLUMN_TWO": [{
             "image": "d",
-            "title": "商城订单"
+            "title": "商城订单",
+            "id": "shoporder"
         },
         {
             "image": "e",
-            "title": "我的拼团"
+            "title": "我的拼团",
+            "id": "team"
         },
         {
             "image": "f",
-            "title": "我的证书"
+            "title": "我的证书",
+            "id": "certificate"
         }
     ],
     "COLUMN_THREE": [{
         "image": "g",
-        "title": "我的每日一课"
+        "title": "我的每日一课",
+        "id": "dailylesson"
     }],
     "COLUMN_FOUR": [{
             "image": "h",
             "title": "礼券",
-            "backImg": 1
+            "backImg": 1,
+            "id": "gift"
         },
         {
             "image": "i",
-            "title": "课程赠送"
+            "title": "课程赠送",
+            "id": "present"
         },
         {
             "image": "j",
-            "title": "分享有赏"
+            "title": "分享有赏",
+            "id": "share"
         },
         {
             "image": "k",
-            "title": "邀请好友"
+            "title": "邀请好友",
+            "id": "friends"
         },
         {
             "image": "l",
-            "title": "关注服务号领币"
+            "title": "关注服务号领币",
+            "id": "money"
         }
     ],
     "COLUMN_FIVE": [{
             "image": "m",
-            "title": "帮助与反馈"
+            "title": "帮助与反馈",
+            "id": "help"
         },
         {
             "image": "n",
-            "title": "设置"
+            "title": "设置",
+            "id": "settings"
         }
     ]
 }
