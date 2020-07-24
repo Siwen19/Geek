@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'; 
 
-function Camp() {
-    return (
+function Camp() { 
+    return ( 
         <div>Camp</div>
     )
 }

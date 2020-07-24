@@ -1,5 +1,4 @@
-import React, {useEffect} from 'react';
-import Header from './header/Header';
+import React, {useEffect} from 'react'; 
 import Path from './learn-path/Path'; 
 import Direction from './lesson-direction/Direction';
 import AllLessons from './allLessons/allLessons';
@@ -8,8 +7,8 @@ import { connect } from 'react-redux';
 import * as actionTypes from './store/actions';
 
 function Lessons(props) {   
-    const {studyPath, lessonsDirection, allLessons, enterLoading, getLessonsListDataDispatch} = props;
-    // console.log(studyPath, lessonsDirection, allLessons, enterLoading);
+    const {route, studyPath, lessonsDirection, allLessons, enterLoading, getLessonsListDataDispatch} = props;
+    // console.log(studyPath, lessonsDirection, allLessons, enterLoading); 
 
     useEffect(() => {
         if (!studyPath.length) {
@@ -18,8 +17,7 @@ function Lessons(props) {
     }, []);
     
     return (  
-        <Tab>
-            <Header />
+        <Tab> 
             <Path data={studyPath}/>
             <Direction data={lessonsDirection}/>
             <AllLessons data={allLessons}/>

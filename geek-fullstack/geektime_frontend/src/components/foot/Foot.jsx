@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Foot.css';
 import { renderRoutes } from 'react-router-config';
-function Foot({ route }) {
+function Foot({ route }) {  
     return ( 
         <div>
              {renderRoutes(route.routes)}
@@ -27,7 +27,7 @@ function Foot({ route }) {
                     <p className="gk-foot--label">学习</p>
                 </NavLink>
 
-                <NavLink to="/my" className="gk-foot--item">
+                <NavLink to="/user" className="gk-foot--item">
                     <span className="gk-foot--icon iconfont">&#xe604;</span>
                     <p className="gk-foot--label">我的</p>
                 </NavLink>

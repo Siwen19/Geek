@@ -1,15 +1,14 @@
 import React from 'react'; 
-import Item from './item/Item'; 
-// import Scroll from '../../common/scroll/Scroll'; 
+import Item from './item/Item';  
 import { Wrap, TabNav, InnerDiv, InnerItem, NavWrapper, ContentItem } from './allLessons.style';
-import { TabLesson, TabLeftItem } from '../style';
+import { TabLesson, TabLeftItem } from '../style'; 
 
 export default function All(props) {
     const { data } = props;
     const newData = data !== undefined ? data : [];
     const item = newData.map((ele, index) => <Item data={ele} key={index} />) 
     return (
-        <Wrap>
+        <Wrap> 
             <TabLesson>
                 <TabLeftItem>
                     全部课程
