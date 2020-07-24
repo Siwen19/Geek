@@ -8,6 +8,8 @@
         url('../../asset/findIf/iconfont.svg#iconfont') format('svg');
 }
 
+
+
 .iconfont {
     font-family: "iconfont" !important;
     font-size: 16px;
@@ -15,3 +17,121 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+
+
+input:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+
+.speech {
+    width: 92%;
+    background-color: #f5f5f5;
+    margin: 1px auto;
+    border-radius: 8px;
+}
+
+.speech-title {
+    display: flex;
+    position: relative;
+}
+.speech-title .title-img {
+    background-color: #f5f5f5;
+}
+.speech-author {
+    margin: 2px 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.speech-svg {
+    position: absolute;
+    right: 0;
+}
+.speech-content {
+    display: flex;
+}
+
+.speech-content .iconfont {
+    margin-left: 10px;
+}
+
+.speech-content .speech-news {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.gkLive {
+    margin: 15px auto;
+    background-color: #f5f5f5;
+    width: 92%;
+}
+
+.live-title {
+    position: relative;
+}
+.live-title .iconfont {
+    color: rgb(255,211,174);
+    margin-left: -4px
+}
+
+
+.live-title .live-title-tail {
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    padding-top: 2px;
+}
+
+.live-contents {
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+}
+.live-contents-left .live-time{
+    font-size: 12px
+}
+
+.live-contents-left .live-contents-detail {
+    font-size: 14px;
+}
+
+.live-contents-left .live-teacher {
+    font-size: 10px;
+    margin-top: 16px;
+    padding-top: 16px;
+}
+
+.live-contents-right .live-img {
+    width: 70px;
+    position: absolute;
+    right: 0px;
+}
+
+.gkshop {
+    margin: 15px auto;
+    background-color: #f5f5f5;
+    width: 92%;
+}
+
+.gkshop-title {
+    position: relative;
+}
+.gkshop-title .iconfont {
+    color: rgb(255,211,174);
+    margin-left: -4px
+}
+
+
+.gkshop-title .gkshop-title-tail {
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    padding-top: 2px;
+}
+
+
+  
