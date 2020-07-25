@@ -18,7 +18,7 @@ function Find() {
     const newGku = findList.gku; 
     const newClass = findList.class;
     return (
-        <Fragment >
+        <div className="find-body">
             <Top>
                 <span className="title">发现</span>
                 <span className="iconfont">&#xe624;</span>
@@ -112,7 +112,7 @@ function Find() {
 
             
 
-        </Fragment>
+        </div>
 
 
     )

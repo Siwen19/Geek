@@ -8,7 +8,9 @@
         url('../../asset/findIf/iconfont.ttf') format('truetype'),
         url('../../asset/findIf/iconfont.svg#iconfont') format('svg');
 }
-
+.find-body {
+    background-color: white;
+}
 .iconfont {
     font-family: "iconfont" !important;
     font-size: 16px;

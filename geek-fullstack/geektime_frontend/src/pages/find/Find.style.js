@@ -1,15 +1,16 @@
 import styled, { css } from 'styled-components';
 
 export  const Top = styled.div`
+    background-color: white;
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
     padding: 2px 12px;
-    background-color: white;
     & > span {
         line-height: 25px;
         font-size: 20px;
         margin-top: -44px;
+        
         &.iconfont{
             font-size:20px;
             margin-top: -44px;
