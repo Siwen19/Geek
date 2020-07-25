@@ -21,9 +21,9 @@ function Account(props) {
         let wrapper = document.querySelector('.wrapper');  
         for (let child of wrapper.childNodes) {
             child.style.backgroundColor = "rgb(247, 247, 247)";
-        }  
+        }   
         changeInvestMoney(state);
-    }
+    } 
     return ( 
         <Container>
            <Head>
