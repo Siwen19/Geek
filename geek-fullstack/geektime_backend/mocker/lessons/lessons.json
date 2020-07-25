@@ -47,7 +47,21 @@
             "上新"
         ]
     }],
-    "ALL_LESSONS_LESSONS": [{
+    "ALL_LESSONS_LESSONS": [
+        {   
+            "id": 1,
+            "teach_title": "如何看懂一幅画",
+            "teacher": "罗桂霞",
+            "status": "意大利罗马美术学院讲师、Amelia 当代艺术节创办人",
+            "lessons": "22讲",
+            "learners": "593人已学习",
+            "price": "¥19.9",
+            "cost": "¥99",
+            "provide": "试读",
+            "image": "https://static001.geekbang.org/resource/image/57/9a/578fba04e89229b9baa23a39a4fbb29a.jpg"
+        },
+        {   
+            "id": 2,
             "teach_title": "Vim 实用技巧必知必会",
             "teacher": "吴咏炜",
             "status": "前 Intel 资深软件架构师",
@@ -56,9 +70,10 @@
             "price": "¥19.9",
             "cost": "¥99",
             "provide": "试读",
-            "image": "asserts/teacher_one.jpg"
+            "image": "https://static001.geekbang.org/resource/image/12/8a/1214fc4454be8be5512366f938029f8a.jpg"
         },
         {
+            "id": 3,
             "teach_title": "Selenium自动化测试实践",
             "teacher": "郭宏志",
             "status": "享学志成科技创始人兼CEO",
@@ -67,9 +82,10 @@
             "price": "¥29.9",
             "cost": "¥129",
             "provide": "试看",
-            "image": "asserts/teacher_two.jpg"
+            "image": "https://static001.geekbang.org/resource/image/2a/d6/2a8be618d516089eca0df6036f5e20d6.jpg"
         },
         {
+            "id": 4,
             "teach_title": "Web安全攻防实战",
             "teacher": "王昊天",
             "status": "螣龙安科技创始人兼CEO",
@@ -78,9 +94,10 @@
             "price": "¥29.9",
             "cost": "¥129",
             "provide": "试看",
-            "image": "asserts/teacher_three.jpg"
+            "image": "https://static001.geekbang.org/resource/image/da/9b/da14870ac55e7688341ea830f124679b.jpg"
         },
         {
+            "id": 5,
             "teach_title": "OAuth 2.0实战课",
             "teacher": "王新栋",
             "status": "京东资深架构师",
@@ -89,9 +106,10 @@
             "price": "¥9.9",
             "cost": "¥68",
             "provide": "试读",
-            "image": "asserts/teacher_four.jpg"
+            "image": "https://static001.geekbang.org/resource/image/c1/86/c1d7f065401c68c1yyf2267a0aac7e86.jpg"
         },
         {
+            "id": 6,
             "teach_title": "跟月影学可视化",
             "teacher": "月影",
             "status": "奇虎360奇舞团团长，可视化UI框架SpriteJS核心开发者，《JavaScript王者归来》作者",
@@ -100,9 +118,10 @@
             "price": "¥29.9",
             "cost": "¥129",
             "provide": "试读",
-            "image": "asserts/teacher_five.jpg"
+            "image": "https://static001.geekbang.org/resource/image/26/37/2624ca8f00f7a870fcbb963edd51cd37.jpg"
         },
         {
+            "id": 7,
             "teach_title": "分布式系统案例课",
             "teacher": "杨波",
             "status": "前携程/拍拍贷技术总监，微服务技术专家",
@@ -111,9 +130,10 @@
             "price": "¥29.9",
             "cost": "¥129",
             "provide": "试看",
-            "image": "asserts/teacher_six.jpg"
+            "image": "https://static001.geekbang.org/resource/image/c7/3b/c7b56adc40d8021c4b7bdd5724abf93b.jpg"
         },
         {
+            "id": 8,
             "teach_title": "正则表达式入门课",
             "teacher": "涂伟忠",
             "status": "高级研发工程师",
@@ -122,9 +142,10 @@
             "price": "¥9.9",
             "cost": "¥68",
             "provide": "试读",
-            "image": "asserts/teacher_seven.jpg"
+            "image": "https://static001.geekbang.org/resource/image/10/f8/100a8db2037884e5c486a4041a0aebf8.jpg"
         },
         {
+            "id": 9,
             "teach_title": "TensorFlow 2项目进阶实战",
             "teacher": "彭靖田",
             "status": "Google Developer Expert、《TensorFlow 快速入门与实战》作者",
@@ -133,7 +154,56 @@
             "price": "¥29.9",
             "cost": "¥129",
             "provide": "试看",
-            "image": "asserts/teacher_eight.jpg"
+            "image": "https://static001.geekbang.org/resource/image/97/8b/97264405bbe385f997b9e3e98f1bb78b.jpg"
+        },
+        {
+            "id": 10,
+            "teach_title": "编译原理实战课",
+            "teacher": "宫文学",
+            "status": "北京物演科技CEO",
+            "lessons": "53讲",
+            "learners": "2835已学习",
+            "price": "¥29.9",
+            "cost": "¥129",
+            "provide": "试读",
+            "image": "https://static001.geekbang.org/resource/image/50/cf/50687e35553d8296fee24daa948c21cf.jpg"
+        },
+        {
+            "id": 11,
+            "teach_title": "软件设计之美",
+            "teacher": "郑晔",
+            "status": "推文科技技术VP，前火币网首席架构师",
+            "lessons": "36讲",
+            "learners": "3276已学习",
+            "price": "¥19.9",
+            "cost": "¥99",
+            "provide": "试读",
+            "image": "https://static001.geekbang.org/resource/image/41/6e/413b1925fa57e67e0f3dfe492fe1a26e.jpg"
+        },
+        {
+            "id": 12,
+            "teach_title": "微信小程序全栈开发实战",
+            "teacher": "李艺",
+            "status": "腾讯云TVP",
+            "lessons": "73讲",
+            "learners": "35875已学习",
+            "price": "¥29.9",
+            "cost": "¥129",
+            "provide": "试看",
+            "image": "https://static001.geekbang.org/resource/image/28/d2/28e3985950a6e8098a611930280392d2.jpg"
+        },
+        {
+            "id": 13,
+            "teach_title": "职场求生攻略",
+            "teacher": "臧萌",
+            "status": "PayPal 数据处理组技术负责人，《Java 入门 1 2 3》作者",
+            "lessons": "33讲",
+            "learners": "1468已学习",
+            "price": "¥19.9",
+            "cost": "¥99",
+            "provide": "试读",
+            "image": "https://static001.geekbang.org/resource/image/67/e9/67cf505c85b38a2cae773d8a5bc36ce9.jpg"
         }
     ]
 }
+
