@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
 import { reducer as lessonsReducer } from '../pages/lecture/lessons/store/index';
+import { reducer as investMoney } from '../pages/homepage/account/store/index';
 
 export default combineReducers({
-    lessons: lessonsReducer
+    lessons: lessonsReducer,
+    investMoney: investMoney
 });
