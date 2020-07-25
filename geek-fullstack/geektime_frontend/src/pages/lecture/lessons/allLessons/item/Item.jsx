@@ -4,18 +4,13 @@ import {
     Wrapper, ImageWrapper, TitleWrapper, TeacherWrapper, LessonsWrapper,
     DetailsWrapper, InnerLeftItem, RightItem
 } from './Item.style';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { renderRoutes } from 'react-router-config';
 
 export default function Item(props) {
-    const { data, path } = props; 
-    const [state, setState] = useState("");  
-    const handleClickEvent = (e) => {
-        setState(e.target.id);
-    }
+    const { data, path } = props;
     return (
         <Wrapper>
-            {state === "1" && renderRoutes(path.routes)}
             <ImageWrapper>
                 <img src={data.image} alt="" />
             </ImageWrapper>
@@ -37,12 +32,12 @@ export default function Item(props) {
                         <span>{data.cost}</span>
                     </InnerLeftItem>
                     <RightItem>
-                        <NavLink id={data.id} to={`/lecture/lessons/${data.id}`} onClick={handleClickEvent}>
+                        <Link id={data.id} to={`/lecture/lessons/${data.id}`} style={{ color: "#fa8919" }}>
                             {data.provide}
-                        </NavLink> 
+                        </Link>
                     </RightItem>
                 </DetailsWrapper>
             </TitleWrapper>
-        </Wrapper> 
+        </Wrapper>
     )
 };

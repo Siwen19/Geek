@@ -138,4 +138,5 @@ export const CenterBar = styled.div`
 export const Content = styled.div` 
   display: flex;
   flex-wrap: wrap;  
+  margin: 0 auto;
 `

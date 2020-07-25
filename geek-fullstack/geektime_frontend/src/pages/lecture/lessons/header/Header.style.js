@@ -39,6 +39,6 @@ export const Nav = styled.div `
         width: 20px;
         height: 20px;
         top: 1.5vh;
-        z-index: 100;
+        z-index: 1;
     }
 `;
