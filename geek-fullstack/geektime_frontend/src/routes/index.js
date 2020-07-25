@@ -10,6 +10,7 @@ import userLayout from '../pages/homepage/HomePage';
 import Header from '../pages/lecture/lessons/header/Header';
 import studyLayout from '../pages/study/Study';
 import Account from '../pages/homepage/account/account'; 
+import personPage from '../pages/lecture/lessons/detailpage/index';
 
 export default  [
     {
@@ -39,7 +40,13 @@ export default  [
                   },
                   {
                     path: '/lecture/lessons',
-                    component: lessonsLayout
+                    component: lessonsLayout,
+                    routes: [
+                      {
+                        path: "/lecture/lessons/1",
+                        component: personPage
+                      }
+                    ]
                   },
                   {
                     path: '/lecture/camp',
