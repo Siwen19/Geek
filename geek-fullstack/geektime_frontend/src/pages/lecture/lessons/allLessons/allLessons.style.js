@@ -44,8 +44,7 @@ export const InnerDiv = styled.div `
     }
 `;
 export const ContentItem = styled.div `
-    padding: 0 15px;
-    margin-bottom: 9vh; 
+    padding: 0 15px; 
 `;
 
 export const Content = styled.div`

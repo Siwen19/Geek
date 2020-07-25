@@ -6,34 +6,32 @@ import { Tab, Content } from './index.style';
 import { connect } from 'react-redux';
 import * as actionTypes from './store/actions';
 import { renderRoutes } from 'react-router-config'
-import Scroll from '../../../components/scroll/Scroll'
+import Scroll from '../../../components/scroll/Scroll' 
 
 function Lessons(props) {
     const { route, studyPath, lessonsDirection, allLessons, enterLoading, getLessonsListDataDispatch } = props;
+    // console.log(studyPath, lessonsDirection, allLessons, enterLoading); 
+    useEffect(() => {
+        if (!studyPath.length) {
+            getLessonsListDataDispatch();
+        }
+    }, []);
 
-    function Lessons(props) {
-        const { route, studyPath, lessonsDirection, allLessons, enterLoading, getLessonsListDataDispatch } = props;
-        // console.log(studyPath, lessonsDirection, allLessons, enterLoading); 
-        useEffect(() => {
-            if (!studyPath.length) {
-                getLessonsListDataDispatch();
-            }
-        }, []);
+    return (
+        <>
+        {renderRoutes(route.routes)}
+        <Content>
+            <Scroll className="lessonsitem">
+                <Tab> 
+                    <Path data={studyPath} />
+                    <Direction data={lessonsDirection} />
+                    <AllLessons data={allLessons} path={route} />
+                </Tab>
+            </Scroll>
+        </Content>
+        </>
 
-        return (
-            <Content>
-                <Scroll className="lessonsitem">
-                    <Tab>
-                        {renderRoutes(route.routes)}
-                        <Path data={studyPath} />
-                        <Direction data={lessonsDirection} />
-                        <AllLessons data={allLessons} path={route} />
-                    </Tab>
-                </Scroll>
-            </Content>
-
-        )
-    }
+    )
 }
 
 export default connect(function mapStateToProps(state) {

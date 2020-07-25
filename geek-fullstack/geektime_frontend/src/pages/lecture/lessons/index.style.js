@@ -4,10 +4,9 @@ export const Tab = styled.div `
     background-color: #fff;
 `;
 
-export const Content = styled.div`
-  margin-top: -50px;
+export const Content = styled.div` 
   position: fixed;
-  top: 90px;
-  bottom: 0;
-  width: 100%;
+  top: 40px;
+  bottom: 55px; 
+  width: 100%; 
 `

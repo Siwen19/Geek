@@ -47,12 +47,7 @@ export default function All(props) {
             </TabNav>
             <ContentItem>
                 {item}
-            </ContentItem>
-
-
-
-
-
+            </ContentItem> 
         </Wrap>
     )
 };
