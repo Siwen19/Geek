@@ -43,7 +43,7 @@ export default  [
                     component: lessonsLayout,
                     routes: [
                       {
-                        path: "/lecture/lessons/1",
+                        path: "/lecture/lessons/:id",
                         component: personPage
                       }
                     ]

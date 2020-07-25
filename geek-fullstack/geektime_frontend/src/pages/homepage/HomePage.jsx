@@ -5,6 +5,7 @@ import Navigation from './navigation/Navigation';
 import Article from './article/Article';
 import { connect } from 'react-redux';
 import {changeDefaultMoney} from './account/store/actions';
+import { renderRoutes } from 'react-router-config';
 
 function HomePage(props) {
     const { route, investMoney } = props;  
@@ -18,7 +19,8 @@ function HomePage(props) {
         <Article data={homeList[ele]} path={route} key={i} remain={investMoney} />
     );
     return (
-        <div className='Home_Wrapper'>  
+        <div className='Home_Wrapper'> 
+        {renderRoutes(route.routes)}  
             <Header />
             <Navigation />
                 {aticle} 
