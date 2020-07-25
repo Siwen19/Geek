@@ -47,3 +47,10 @@ export const ContentItem = styled.div `
     padding: 0 15px;
     margin-bottom: 9vh; 
 `;
+
+export const Content = styled.div`
+  position: fixed;
+  top: 90px;
+  bottom: 0;
+  width: 100%;
+`

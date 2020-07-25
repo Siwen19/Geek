@@ -1,28 +1,39 @@
-import React, {useEffect} from 'react'; 
-import Path from './learn-path/Path'; 
+import React, { useEffect } from 'react';
+import Path from './learn-path/Path';
 import Direction from './lesson-direction/Direction';
 import AllLessons from './allLessons/allLessons';
-import {Tab} from './index.style'; 
-import { connect } from 'react-redux'; 
+import { Tab, Content } from './index.style';
+import { connect } from 'react-redux';
 import * as actionTypes from './store/actions';
 import { renderRoutes } from 'react-router-config'
+import Scroll from '../../../components/scroll/Scroll'
 
-function Lessons(props) {   
-    const {route, studyPath, lessonsDirection, allLessons, enterLoading, getLessonsListDataDispatch} = props;
-    // console.log(studyPath, lessonsDirection, allLessons, enterLoading); 
-    useEffect(() => {
-        if (!studyPath.length) {
-            getLessonsListDataDispatch();
-        } 
-    }, []); 
-    return (  
-        <Tab> 
-            {renderRoutes(route.routes)}
-            <Path data={studyPath}/>
-            <Direction data={lessonsDirection}/>
-            <AllLessons data={allLessons} path={route}/>
-        </Tab>
-    )
+function Lessons(props) {
+    const { route, studyPath, lessonsDirection, allLessons, enterLoading, getLessonsListDataDispatch } = props;
+
+    function Lessons(props) {
+        const { route, studyPath, lessonsDirection, allLessons, enterLoading, getLessonsListDataDispatch } = props;
+        // console.log(studyPath, lessonsDirection, allLessons, enterLoading); 
+        useEffect(() => {
+            if (!studyPath.length) {
+                getLessonsListDataDispatch();
+            }
+        }, []);
+
+        return (
+            <Content>
+                <Scroll className="lessonsitem">
+                    <Tab>
+                        {renderRoutes(route.routes)}
+                        <Path data={studyPath} />
+                        <Direction data={lessonsDirection} />
+                        <AllLessons data={allLessons} path={route} />
+                    </Tab>
+                </Scroll>
+            </Content>
+
+        )
+    }
 }
 
 export default connect(function mapStateToProps(state) {
