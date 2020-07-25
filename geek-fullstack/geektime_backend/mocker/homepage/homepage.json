@@ -1,8 +1,7 @@
 {
     "COLUMN_ONE": [{
             "image": "a",
-            "title": "账户",
-            "money": "0.00",
+            "title": "账户", 
             "id": "account"
         },
         {

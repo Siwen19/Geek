@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { renderRoutes } from 'react-router-config';
 
 export default function Item(props) {
-    const { data, path } = props; 
+    const { data, path, remain } = props;  
     const [state, setState] = useState("");  
     const handleClickEvent = (e) => {
         setState(e.target.parentNode.id)
@@ -16,12 +16,14 @@ export default function Item(props) {
             <div className="content-wrapper" id={data.id} onClick={handleClickEvent}>  
             <img src={`/asserts/${data.image}.png`} alt="" className="data-image" />
             <div className="data-title" id={data.id}>
-                <span style={{textDecoration: "none"}}>{data.title}</span>
+                <span>{data.title}</span>
             </div>
-            <span className='remain-money'>{data.money}</span>
+            {
+                data.id === 'account' && <span className='remain-money'>{remain}</span>
+            } 
             <img src="/asserts/right.png" alt="" className="right-image" />
         </div>
         </NavLink>
         </>
     )
-} 
+}  

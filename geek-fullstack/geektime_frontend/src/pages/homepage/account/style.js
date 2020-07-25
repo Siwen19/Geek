@@ -134,3 +134,8 @@ export const CenterBar = styled.div`
     text-align: center;
     border-radius: 5px;  
 `;
+
+export const Content = styled.div` 
+  display: flex;
+  flex-wrap: wrap;  
+`

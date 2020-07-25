@@ -47,6 +47,10 @@ option {
   font-family: arial, '\5B8B\4F53', '\5FAE\8F6F\96C5\9ED1', verdana, helvetica,
       sans-serif;
 }
+a {
+  text-decoration: none;
+  color: #000;
+}
 
 body {
   min-width: 320px;
@@ -54,6 +58,7 @@ body {
   font-size: 16px;
   margin: 0 auto;
   padding-top: 44px;
+  text-decoration: none;
   /* 44px 标准 流出top给header iPhone的规则 */
 }
 
@@ -68,4 +73,4 @@ body {
 
 button {
   -webkit-appearance: none;
-}
+} 
