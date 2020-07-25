@@ -1,15 +1,17 @@
-import React from 'react'; 
-import Item from './item/Item';  
+import React from 'react';
+import Item from './item/Item';
 import { Wrap, TabNav, InnerDiv, InnerItem, NavWrapper, ContentItem } from './allLessons.style';
-import { TabLesson, TabLeftItem } from '../style'; 
+import { TabLesson, TabLeftItem } from '../style';
+
 import { renderRoutes } from 'react-router-config';
 
 export default function All(props) {
-    const { data, path } = props; 
+    const { data, path } = props;
     const newData = data !== undefined ? data : [];
-    const item = newData.map((ele, index) => <Item data={ele} key={index} path={path}/>) 
+    const item = newData.map((ele, index) => <Item data={ele} key={index} path={path} />)
     return (
-        <Wrap>  
+        <Wrap>
+
             <TabLesson>
                 <TabLeftItem>
                     全部课程
@@ -46,6 +48,11 @@ export default function All(props) {
             <ContentItem>
                 {item}
             </ContentItem>
+
+
+
+
+
         </Wrap>
     )
 };
