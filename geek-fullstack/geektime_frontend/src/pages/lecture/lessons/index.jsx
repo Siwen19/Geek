@@ -9,7 +9,7 @@ import * as actionTypes from './store/actions';
 function Lessons(props) {   
     const {route, studyPath, lessonsDirection, allLessons, enterLoading, getLessonsListDataDispatch} = props;
     // console.log(studyPath, lessonsDirection, allLessons, enterLoading); 
-
+    console.log(route);
     useEffect(() => {
         if (!studyPath.length) {
             getLessonsListDataDispatch();
@@ -20,7 +20,7 @@ function Lessons(props) {
         <Tab> 
             <Path data={studyPath}/>
             <Direction data={lessonsDirection}/>
-            <AllLessons data={allLessons}/>
+            <AllLessons data={allLessons} path={route}/>
         </Tab>
     )
 }
