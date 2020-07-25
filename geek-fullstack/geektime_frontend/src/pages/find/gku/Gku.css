@@ -1,0 +1,19 @@
+.gkuitems .gku-detail .type{
+    font-size: 14px;
+}
+
+.gkuitems .gku-detail .note1{
+    font-size: 10px;
+}
+
+.gkuitems .gku-detail .teacher-job{
+    font-size: 10px;
+}
+
+.gkuitems .gku-detail .time{
+    font-size: 10px;
+    color: rgb(254,221,189);
+    margin-bottom: 13px;
+    margin-top: 3px;
+}
+

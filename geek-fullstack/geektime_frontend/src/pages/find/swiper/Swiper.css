@@ -1,17 +1,16 @@
 .find.swiper-container {
     width: 92%;
-    height: 400px;
+    height: 180px;
     position: relative;
+    display: flex;
 }
 /* .swiper-slide {
     height: 400px;
 } */
 /* .swiper-container img {
-    top: 3px;
-    margin-left: 4.5%;
-    position: absolute;
-    border-radius: 5px;
-} */
+    justify-content: center;
+   align-items: center; 
+}  */
 
 .swiper-pagination-bullet-active {
     background-color: red

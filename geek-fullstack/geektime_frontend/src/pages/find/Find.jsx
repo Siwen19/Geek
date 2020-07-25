@@ -3,19 +3,22 @@ import './Find.css'
 import { Top, Search, } from './Find.style'
 import MySwiper from './swiper/Swiper';
 import Shop from './shop/Shop';
+import Gku from './gku/Gku';
+import Class from './class/Class';
 
 function Find() {
-    const [findList, setState] = useState([]);
+    const [findList, setFindList] = useState([]);
     useEffect(() => {
         fetch('http://localhost:8080/find/find.json')
             .then(data => data.json())
-            .then(res => setState(res))
+            .then(res => setFindList(res))
     }, [])
     // console.log(findList);
-    const newShop = findList.shop !== undefined ? findList.shop : [];
-
+    const newShop = findList.shop;
+    const newGku = findList.gku; 
+    const newClass = findList.class;
     return (
-        <Fragment>
+        <Fragment >
             <Top>
                 <span className="title">发现</span>
                 <span className="iconfont">&#xe624;</span>
@@ -40,7 +43,6 @@ function Find() {
                             fill="none" />
                     </svg>
                 </div>
-
                 <div className="speech-content">
                     <span className="iconfont">&#xe645;</span>
                     <div className="speech-news">第319期 | 新浪或将退市</div>
@@ -65,16 +67,50 @@ function Find() {
                 </div>
             </div>
 
+            <div className="line"></div>
+
+            <div className="ad1">
+                <img src="/asserts/find-images/ad1.png" alt="" width="94%"/>
+            </div>
+
             <div className="gkshop">
                 <div className="gkshop-title">
                     <span className="iconfont">&#xe614;</span>
-                    <span className="gkshop-title-type">极客大学</span>
+                    <span className="gkshop-title-type">极客商城</span>
                     <span className="gkshop-title-tail">查看全部</span>
                 </div>
                 <div className="gkshop-contents">
-                    {newShop.map((ele, i) => <Shop key={i} shop={ele} />)}
+                    {Array.isArray(newShop) && newShop.map((ele, i) => <Shop key={i} shop={ele} />)}
                 </div>
             </div>
+
+            <div className="gku">
+                <div className="gku-title">
+                    <span className="iconfont">&#xe614;</span>
+                    <span className="gku-title-type">极客大学</span>
+                    <span className="gku-title-tail">查看全部</span>
+                </div>
+                <div className="gku-contents">
+                    {Array.isArray(newGku) && newGku.map((ele, i) => <Gku key={i} gku={ele} />)}
+                </div>
+            </div>
+
+            <div className="cls">
+                <div className="cls-title">
+                    <span className="iconfont">&#xe614;</span>
+                    <span className="cls-title-type">每日一课</span>
+                    <span className="cls-title-tail">查看全部</span>
+                </div>
+                <div className="cls-contents">
+                    {Array.isArray(newClass) && newClass.map((ele, i) => <Class key={i} cls={ele} />)}
+                </div>
+            </div>
+
+            <div className="buttonVIP">
+                开通VIP畅看，低至 1 元 / 天
+            </div>
+
+            
 
         </Fragment>
 

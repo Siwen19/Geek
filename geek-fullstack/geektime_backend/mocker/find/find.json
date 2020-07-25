@@ -47,7 +47,17 @@
     }],
 
     "class":[{
-        
+        "image": "class1",
+        "note": "如何从libuv看Nodejs中的时间循环核心机制？" 
+    },{
+        "image": "class2",
+        "note": "如何准确地送达即时通讯系统中的消息？"  
+    },{
+        "image": "class3",
+        "note": "如何用好Redis中内存数据库？"  
+    },{
+        "image": "class4",
+        "note": "如何提升系统的前端质量？"  
     }]
     
 }
