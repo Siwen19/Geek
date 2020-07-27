@@ -8,27 +8,27 @@ function Foot({ route }) {
              {renderRoutes(route.routes)}
             <div className="gk-foot">  
                 <NavLink to="/" className="gk-foot--item gk-foot--item__on" activeClassName="selected">
-                    <span className="gk-foot--icon iconfont">&#xe726;</span>
+                    <span className="gk-foot--icon iconfont">&#xe60e;</span>
                     <p className="gk-foot--label">发现</p>
                 </NavLink>
 
                 <NavLink to="/lecture" className="gk-foot--item" activeClassName="selected">
-                    <span className="gk-foot--icon iconfont">&#xe649;</span>
+                    <span className="gk-foot--icon iconfont">&#xe726;</span>
                     <p className="gk-foot--label">讲堂</p>
                 </NavLink>
 
                 <NavLink to="/horde" className="gk-foot--item" activeClassName="selected">
-                    <span className="gk-foot--icon iconfont">&#xe677;</span>
+                    <span className="gk-foot--icon iconfont">&#xe637;</span>
                     <p className="gk-foot--label">部落</p>
                 </NavLink>
 
                 <NavLink to="/study" className="gk-foot--item" activeClassName="selected">
-                    <span className="gk-foot--icon iconfont">&#xe609;</span>
+                    <span className="gk-foot--icon iconfont">&#xe625;</span>
                     <p className="gk-foot--label">学习</p>
                 </NavLink>
 
                 <NavLink to="/user" className="gk-foot--item" activeClassName="selected">
-                    <span className="gk-foot--icon iconfont">&#xe604;</span>
+                    <span className="gk-foot--icon iconfont">&#xe617;</span>
                     <p className="gk-foot--label">我的</p>
                 </NavLink>
             </div>

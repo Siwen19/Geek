@@ -21,7 +21,7 @@ function Lessons(props) {
         <>
         {renderRoutes(route.routes)}
         <Content>
-            <Scroll className="lessonsitem">
+            <Scroll>
                 <Tab> 
                     <Path data={studyPath} />
                     <Direction data={lessonsDirection} />

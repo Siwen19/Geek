@@ -1,7 +1,6 @@
 import React from 'react'
 import './Class.css'
-export default function Class(props) {
-    // console.log(props);
+export default function Class(props) { 
     const { cls } = props;
     return (
         <div className="clsitems">

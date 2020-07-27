@@ -2,16 +2,9 @@
     width: 92%;
     height: 180px;
     position: relative;
-    display: flex;
-}
-/* .swiper-slide {
-    height: 400px;
-} */
-/* .swiper-container img {
-    justify-content: center;
-   align-items: center; 
-}  */
+    display: flex; 
+} 
 
 .swiper-pagination-bullet-active {
     background-color: red
-}
+} 

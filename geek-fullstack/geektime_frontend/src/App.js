@@ -3,7 +3,8 @@ import { HashRouter } from "react-router-dom";
 import { renderRoutes } from "react-router-config";
 import routes from "./routes/index.js";
 import {Provider} from 'react-redux';
-import store from './store/store';  
+import store from './store/store';   
+import './asset/iconfont/iconfont.css';
 
 function App() {
     return (
