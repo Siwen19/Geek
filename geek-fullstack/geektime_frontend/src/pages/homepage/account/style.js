@@ -7,7 +7,7 @@ export const Container = styled.div`
   right: 0;
   bottom: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 100; 
   overflow: hidden;
   background: #fff;
   transform-origin: right bottom; 
@@ -17,7 +17,7 @@ export const Head = styled.div`
   height: 44px;
   line-height: 44px;
   width: 100vw;
-  font-size: 18px;
+  font-size: 18px; 
   position: fixed;
   text-align: center;  
   display: flex;

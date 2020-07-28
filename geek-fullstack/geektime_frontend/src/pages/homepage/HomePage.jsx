@@ -21,7 +21,7 @@ function HomePage(props) {
     const { route, investMoney } = props;
     const [homeList, setState] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:8080/rest/homepage.json')
+        fetch('http://localhost:8080/rest/homepage')
             .then(data => data.json())
             .then(res => setState(res))
     }, [])
@@ -31,11 +31,10 @@ function HomePage(props) {
     return (
         <>
         <Header />
+                    {renderRoutes(route.routes)}
         <Content>
             <Scroll>
                 <div className='Home_Wrapper'> 
-                    {renderRoutes(route.routes)}
-
                     <Navigation />
                     {aticle}
                 </div>

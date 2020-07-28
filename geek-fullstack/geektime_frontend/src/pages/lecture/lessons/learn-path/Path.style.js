@@ -15,4 +15,4 @@ export const Content = styled.div `
     overflow-x: auto;
     overflow-y: hidden; 
 } 
-`;
+`;  

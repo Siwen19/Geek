@@ -8,32 +8,32 @@ import { NavLink, Link } from 'react-router-dom';
 import { renderRoutes } from 'react-router-config';
 
 export default function Item(props) {
-    const { data, path } = props;
+    const { data } = props; 
     return (
         <Wrapper>
             <ImageWrapper>
-                <img src={data.image} alt="" />
+                <img src={data.author.avatar} alt="" />
             </ImageWrapper>
             <TitleWrapper>
-                <h3>{data.teach_title}</h3>
+                <h3>{data.title}</h3>
                 <TeacherWrapper>
-                    <span>{data.teacher}</span>
-                    <span>{data.status}</span>
+                    <span>{data.author.name}</span>
+                    <span>{data.author.intro}</span>
                 </TeacherWrapper>
                 <LessonsWrapper>
-                    {data.lessons} | {data.learners}
+                    {data.unit} | {data.extra.sub.count}人已学习
                 </LessonsWrapper>
                 <DetailsWrapper>
                     <InnerLeftItem>
                         <span>
                             <span>新人首单</span>
                         </span>
-                        <span>{data.price}</span>
-                        <span>{data.cost}</span>
+                        <span>¥{data.extra.first_promo.price / 100}</span>
+                        <span>¥{data.price.market / 100}</span>
                     </InnerLeftItem>
                     <RightItem>
                         <Link id={data.id} to={`/lecture/lessons/${data.id}`} style={{ color: "#fa8919" }}>
-                            {data.provide}
+                            {data.type === 'c1' ? "试读":"试看"}
                         </Link>
                     </RightItem>
                 </DetailsWrapper>

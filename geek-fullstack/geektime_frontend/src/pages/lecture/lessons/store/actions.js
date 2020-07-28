@@ -1,4 +1,4 @@
-import { getLessonsListRequest } from '../../api/request';
+import { getLessonsListRequest, getLessonsInfoRequest } from '../../api/request';
 
 export const CHANGE_STUDY_PATH = "CHANGE_STUDY_PATH";
 export const CHANGE_LESSONS_DIRECTION = "CHANGE_LESSONS_DIRECTION";
@@ -10,10 +10,14 @@ export const getLessonsList = () => {
         getLessonsListRequest().then(data => {
             dispatch(changeStudyPath(data.data.STUDY_PATH_TITLE));
             dispatch(changeLessonsDirection(data.data.LESSONS_DIRECTION_TITLE));
-            dispatch(changeAllLessons(data.data.ALL_LESSONS_LESSONS));
             dispatch(changeEnterLoading(false));
         }).catch(() => {
             console.log("课程数据传输有误");
+        })
+        getLessonsInfoRequest().then(data => { 
+            dispatch(changeAllLessons(data.data.data.infos));
+        }).catch(() => {
+            console.log("课程信息传输有误");
         })
     }
 }
