@@ -8,7 +8,7 @@ import { NavLink, Link } from 'react-router-dom';
 import { renderRoutes } from 'react-router-config';
 
 export default function Item(props) {
-    const { data } = props; 
+    const { data } = props;  
     return (
         <Wrapper>
             <ImageWrapper>

@@ -1,40 +1,41 @@
-import {
-    CHANGE_STUDY_PATH,
-    CHANGE_LESSONS_DIRECTION,
-    CHANGE_ALL_LESSONS,
-    CHANGE_ENTER_LOADING
-} from './actions';
+import * as actionTypes from './constants';
 
 const defaultList = {
     studyPath: [],
     lessonsDirection: [],
     allLessons: [],
     enterLoading: true,
+    pullUpLoading: false,
+    pullDownLoading: false,
+    listOffset: 0, // 请求列表的偏移不是page，是个数
 }
 
-export default (state = defaultList, action) => {
-    const { type, data } = action;
+export default (state = defaultList, action) => { 
+    const { type, data } = action; 
     switch (type) {
-        case CHANGE_STUDY_PATH:
+        case actionTypes.CHANGE_STUDY_PATH:
             return {
                 ...state,
                 studyPath: data
             };
-        case CHANGE_LESSONS_DIRECTION:
+        case actionTypes.CHANGE_LESSONS_DIRECTION:
             return {
                 ...state,
                 lessonsDirection: data
             };
-        case CHANGE_ALL_LESSONS:
+        case actionTypes.CHANGE_ALL_LESSONS:
             return {
                 ...state,
                 allLessons: data
-            }
-        case CHANGE_ENTER_LOADING:
-            return {
-                ...state,
-                enterLoading: data
-            }
+            };
+        case actionTypes.CHANGE_LIST_OFFSET: 
+            return { ...state, listOffset: action.data };
+        case actionTypes.CHANGE_ENTER_LOADING:
+            return { ...state, enterLoading: action.data };
+        case actionTypes.CHANGE_PULLUP_LOADING:
+            return { ...state, pullUpLoading: action.data };
+        case actionTypes.CHANGE_PULLDOWN_LOADING:
+            return { ...state, pullDownLoading: action.data };
         default:
             return state;
     }
