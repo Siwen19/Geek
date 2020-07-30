@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {Tab, Nav} from './Header.style.js'; 
 import { NavLink } from 'react-router-dom';
-import {renderRoutes} from 'react-router-config'
+import {renderRoutes} from 'react-router-config';
 
 function Header({route}) {   
     return (
@@ -15,8 +15,8 @@ function Header({route}) {
             <NavLink to="/lecture/daily" activeClassName="selected">
                 <span>每日一课</span></NavLink> 
         </Tab>
-        <Nav>
-            <img src="/asserts/search.png" alt=""/>
+        <Nav> 
+            <img src="/asserts/search.png" alt=""/> 
         </Nav> 
         </>
     )

@@ -14,7 +14,7 @@ export const Tab = styled.div `
     font-family: "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", Helvetica, sans-serif;
     a { 
     padding: 2px 0;
-    font-size: 21px;
+    font-size: 16px;
     color: #a5a5a5;
     text-decoration: none;
     display: flex; 
@@ -24,8 +24,8 @@ export const Tab = styled.div `
     &.selected {
       span {
         border-bottom: 2px solid #fa8919;
-        padding: 3px 0;
-        font-weight: 700;
+        padding: 3px 0; 
+        font-size: 22px;
         color: #353535;
         transition: border-bottom .2s
       }

@@ -7,7 +7,10 @@ function Foot({ route }) {
         <div>
              {renderRoutes(route.routes)}
             <div className="gk-foot">  
-                <NavLink to="/" className="gk-foot--item gk-foot--item__on" activeClassName="selected">
+                <NavLink 
+                to="/find" 
+                className="gk-foot--item gk-foot--item__on" 
+                activeClassName="selected">
                     <span className="gk-foot--icon iconfont">&#xe60e;</span>
                     <p className="gk-foot--label">发现</p>
                 </NavLink>

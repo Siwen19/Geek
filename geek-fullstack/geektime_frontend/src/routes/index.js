@@ -1,16 +1,30 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import BlankLayout from './BlankLayout';
-import { Redirect } from 'react-router-dom';
-import lessonsLayout from '../pages/lecture/lessons/index';
-import dailyLayout from '../pages/lecture/daily/index';
-import campLayout from '../pages/lecture/camp/index';
-import findLayout from '../pages/find/Find';
-import footLayout from '../components/foot/Foot';
-import userLayout from '../pages/homepage/HomePage';
-import Header from '../pages/lecture/lessons/header/Header';
-import studyLayout from '../pages/study/Study';
-import Account from '../pages/homepage/account/account'; 
-import personPage from '../pages/lecture/lessons/detailpage/index';
+import { Redirect } from 'react-router-dom';      
+
+const SuspenseComponent = Component => props => {
+  return (
+    <Suspense fallback={null}>
+      <Component {...props}></Component>
+    </Suspense>
+  )
+}
+
+const LessonsLayout = lazy(() => import("../pages/lecture/lessons/index"));
+const DailyLayout = lazy(() => import("../pages/lecture/daily/index"));
+const CampLayout = lazy(() => import("../pages/lecture/camp/index"));
+const FindLayout = lazy(() => import("../pages/find/Find"));
+const FootLayout = lazy(() => import("../components/foot/Foot"));
+const UserLayout = lazy(() => import("../pages/homepage/HomePage"));
+const Header = lazy(() => import("../pages/lecture/lessons/header/Header"));
+const StudyLayout = lazy(() => import("../pages/study/Study"));
+const Account = lazy(() => import("../pages/homepage/account/account"));
+const PersonPage = lazy(() => import("../pages/lecture/lessons/detailpage/index"));
+const IntroductionLayout = lazy(() => import("../pages/lecture/lessons/detailpage/Nav/introduction/index"));
+const RecommendLayout = lazy(() => import("../pages/lecture/lessons/detailpage/Nav/recommend/index"));
+const CommentLayout = lazy(() => import("../pages/lecture/lessons/detailpage/Nav/comment/index"));
+const CategoryLayout = lazy(() => import("../pages/lecture/lessons/detailpage/Nav/category/index"));
+
 
 export default  [
     {
@@ -18,7 +32,7 @@ export default  [
       routes: [
         {
           path: "/",
-          component: footLayout,
+          component: SuspenseComponent(FootLayout),
           routes: [
               {
                 path: "/",
@@ -27,11 +41,11 @@ export default  [
               },
               {
                 path: "/find",
-                component: findLayout
+                component: SuspenseComponent(FindLayout) 
               },
               {  
                 path: "/lecture",
-                component: Header,
+                component: SuspenseComponent(Header),
                 routes: [
                   {
                     path: "/lecture",
@@ -40,35 +54,54 @@ export default  [
                   },
                   {
                     path: '/lecture/lessons',
-                    component: lessonsLayout,
+                    component: SuspenseComponent(LessonsLayout),
                     routes: [
                       {
                         path: "/lecture/lessons/:id",
-                        component: personPage
-                      }
+                        component: SuspenseComponent(PersonPage),
+                        routes: [
+                          {
+                            path: '/lecture/lessons/:id?tab=intro',
+                            component: SuspenseComponent(IntroductionLayout)
+                          }, 
+                          {
+                            path: '/lecture/lessons/:id?tab=catalog',
+                            component: SuspenseComponent(CategoryLayout)
+                          },
+                          {
+                            path: '/lecture/lessons/:id?tab=recommend',
+                            component: SuspenseComponent(RecommendLayout)
+                          },
+                          {
+                            path: '/lecture/lessons/:id?tab=comment',
+                            component: SuspenseComponent(CommentLayout)
+                          }
+                        ]
+                      },
+                      
                     ]
                   },
                   {
                     path: '/lecture/camp',
-                    component: campLayout
+                    component: SuspenseComponent(CampLayout)
                   },
                   {
                     path: '/lecture/daily',
-                    component: dailyLayout
+                    component: SuspenseComponent(DailyLayout)
                   },
                 ] 
               },
               {
                 path: '/study',
-                component: studyLayout
+                component: SuspenseComponent(StudyLayout)
               },
               {
                 path: '/user',
-                component: userLayout,
+                component: SuspenseComponent(UserLayout),
                 routes: [
                   {
                     path: '/user/account',
-                    component: Account
+                    component: SuspenseComponent(Account)
                   }
                 ] 
               },

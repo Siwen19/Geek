@@ -1,0 +1,552 @@
+[
+    {
+        "id": 100017301,
+        "chapters": [
+            {
+                "article_count": 1,
+                "title": "开篇词",
+                "id": "346"
+            },
+            {
+                "article_count": 4,
+                "title": "入门篇",
+                "id": "347"
+            },
+            {
+                "article_count": 38,
+                "title": "基础篇",
+                "id": "348"
+            },
+            {
+                "article_count": 9,
+                "title": "高级篇",
+                "id": "349"
+            },
+            {
+                "article_count": 5,
+                "title": "实战篇",
+                "id": "350"
+            },
+            {
+                "article_count": 6,
+                "title": "加餐：不定期福利",
+                "id": "344"
+            },
+            {
+                "article_count": 7,
+                "title": "加餐：春节7天练",
+                "id": "351"
+            },
+            {
+                "article_count": 2,
+                "title": "加餐：用户学习故事",
+                "id": "352"
+            },
+            {
+                "article_count": 3,
+                "title": "结束语",
+                "id": "353"
+            },
+            {
+                "article_count": 5,
+                "title": "打卡召集令",
+                "id": "1143"
+            }
+        ]
+    },
+    {
+        "id": 100020801,
+        "chapters": [
+            {
+                "article_count": 1,
+                "title": "开篇词",
+                "id": "472"
+            },
+            {
+                "article_count": 8,
+                "title": "基础篇",
+                "id": "473"
+            },
+            {
+                "article_count": 37,
+                "title": "实践篇",
+                "id": "474"
+            },
+            {
+                "article_count": 1,
+                "title": "特别放送",
+                "id": "476"
+            },
+            {
+                "article_count": 1,
+                "title": "结束语",
+                "id": "477"
+            },
+            {
+                "article_count": 1,
+                "title": "结课测试",
+                "id": "1349"
+            }
+        ]
+    },
+    {
+        "id": 100006701,
+        "chapters": [
+            {
+                "article_count": 1,
+                "title": "开篇词",
+                "id": "367"
+            },
+            {
+                "article_count": 14,
+                "title": "模块一  Java基础",
+                "id": "368"
+            },
+            {
+                "article_count": 16,
+                "title": "模块二  Java进阶",
+                "id": "369"
+            },
+            {
+                "article_count": 2,
+                "title": "模块三  Java安全基础",
+                "id": "370"
+            },
+            {
+                "article_count": 3,
+                "title": "模块四  Java性能基础",
+                "id": "371"
+            },
+            {
+                "article_count": 4,
+                "title": "模块5  Java应用开发扩展",
+                "id": "372"
+            },
+            {
+                "article_count": 2,
+                "title": "周末福利",
+                "id": "373"
+            },
+            {
+                "article_count": 2,
+                "title": "结束语",
+                "id": "374"
+            }
+        ]
+    },
+    {
+        "id": 100002201,
+        "chapters": [
+            {
+                "article_count": 21,
+                "title": "技术基础",
+                "id": "1390"
+            },
+            {
+                "article_count": 9,
+                "title": "分布式架构",
+                "id": "1391"
+            },
+            {
+                "article_count": 11,
+                "title": "编程范式",
+                "id": "1392"
+            },
+            {
+                "article_count": 11,
+                "title": "弹力设计",
+                "id": "1393"
+            },
+            {
+                "article_count": 6,
+                "title": "管理设计",
+                "id": "1394"
+            },
+            {
+                "article_count": 5,
+                "title": "性能设计",
+                "id": "1395"
+            },
+            {
+                "article_count": 6,
+                "title": "区块链",
+                "id": "1396"
+            },
+            {
+                "article_count": 23,
+                "title": "程序员练级攻略",
+                "id": "1397"
+            },
+            {
+                "article_count": 4,
+                "title": "程序员面试攻略",
+                "id": "1398"
+            },
+            {
+                "article_count": 5,
+                "title": "高效学习",
+                "id": "1399"
+            },
+            {
+                "article_count": 6,
+                "title": "高效沟通",
+                "id": "1400"
+            },
+            {
+                "article_count": 2,
+                "title": "尾声 & 加餐",
+                "id": "1401"
+            }
+        ]
+    },
+    {
+        "id": 100006601,
+        "chapters": [
+            {
+                "article_count": 1,
+                "title": "开篇词",
+                "id": "359"
+            },
+            {
+                "article_count": 13,
+                "title": "基础架构",
+                "id": "360"
+            },
+            {
+                "article_count": 8,
+                "title": "高性能架构模式",
+                "id": "361"
+            },
+            {
+                "article_count": 10,
+                "title": "高可用架构模式",
+                "id": "362"
+            },
+            {
+                "article_count": 6,
+                "title": "可扩展架构模式",
+                "id": "363"
+            },
+            {
+                "article_count": 13,
+                "title": "架构实战",
+                "id": "364"
+            },
+            {
+                "article_count": 7,
+                "title": "特别放送",
+                "id": "365"
+            },
+            {
+                "article_count": 1,
+                "title": "结束语",
+                "id": "366"
+            },
+            {
+                "article_count": 1,
+                "title": "结课测试",
+                "id": "1310"
+            }
+        ]
+    },
+    {
+        "id": 100007101,
+        "chapters": [
+            {
+                "article_count": 1,
+                "title": "开篇词",
+                "id": "435"
+            },
+            {
+                "article_count": 4,
+                "title": "第一模块 通信协议综述",
+                "id": "436"
+            },
+            {
+                "article_count": 5,
+                "title": "第二模块 底层网络知识详解：从二层到三层",
+                "id": "437"
+            },
+            {
+                "article_count": 4,
+                "title": "第二模块 底层网络知识详解：最重要的传输层",
+                "id": "438"
+            },
+            {
+                "article_count": 4,
+                "title": "第二模块 底层网络知识详解：最常用的应用层",
+                "id": "463"
+            },
+            {
+                "article_count": 6,
+                "title": "第二模块 底层网络知识详解：陌生的数据中心",
+                "id": "492"
+            },
+            {
+                "article_count": 5,
+                "title": "第三模块 热门技术中的应用：云计算中的网络",
+                "id": "493"
+            },
+            {
+                "article_count": 3,
+                "title": "第三模块 热门技术中的应用：容器技术中的网络",
+                "id": "494"
+            },
+            {
+                "article_count": 5,
+                "title": "第三模块 热门技术中的应用：微服务相关协议",
+                "id": "495"
+            },
+            {
+                "article_count": 4,
+                "title": "第四模块 网络协议知识串讲",
+                "id": "496"
+            },
+            {
+                "article_count": 8,
+                "title": "答疑与加餐",
+                "id": "497"
+            },
+            {
+                "article_count": 2,
+                "title": "结束语",
+                "id": "498"
+            }
+        ]
+    },
+    {
+        "id": 100023201,
+        "chapters": [
+            {
+                "article_count": 3,
+                "title": "开篇词+学习路线+架构图",
+                "id": "571"
+            },
+            {
+                "article_count": 15,
+                "title": "模块一：JavaScript",
+                "id": "572"
+            },
+            {
+                "article_count": 16,
+                "title": "模块二：HTML和CSS",
+                "id": "573"
+            },
+            {
+                "article_count": 9,
+                "title": "模块三：浏览器实现原理与API",
+                "id": "574"
+            },
+            {
+                "article_count": 5,
+                "title": "模块四：前端综合应用",
+                "id": "575"
+            },
+            {
+                "article_count": 9,
+                "title": "特别加餐",
+                "id": "576"
+            },
+            {
+                "article_count": 1,
+                "title": "尾声",
+                "id": "577"
+            }
+        ]
+    },
+    {
+        "id": 100015201,
+        "chapters": [
+            {
+                "article_count": 5,
+                "title": "课前必读",
+                "id": "478"
+            },
+            {
+                "article_count": 5,
+                "title": "容器技术概念入门篇",
+                "id": "480"
+            },
+            {
+                "article_count": 3,
+                "title": "Kubernetes集群搭建与实践",
+                "id": "481"
+            },
+            {
+                "article_count": 15,
+                "title": "容器编排与Kubernetes作业管理",
+                "id": "482"
+            },
+            {
+                "article_count": 4,
+                "title": "Kubernetes容器持久化存储",
+                "id": "483"
+            },
+            {
+                "article_count": 8,
+                "title": "Kubernetes容器网络",
+                "id": "484"
+            },
+            {
+                "article_count": 5,
+                "title": "Kubernetes作业调度与资源管理",
+                "id": "485"
+            },
+            {
+                "article_count": 3,
+                "title": "Kubernetes容器运行时",
+                "id": "486"
+            },
+            {
+                "article_count": 3,
+                "title": "Kubernetes容器监控与日志",
+                "id": "487"
+            },
+            {
+                "article_count": 1,
+                "title": "再谈开源与社区",
+                "id": "488"
+            },
+            {
+                "article_count": 1,
+                "title": "答疑文章",
+                "id": "489"
+            },
+            {
+                "article_count": 2,
+                "title": "特别放送",
+                "id": "490"
+            },
+            {
+                "article_count": 1,
+                "title": "结束语",
+                "id": "491"
+            },
+            {
+                "article_count": 1,
+                "title": "结课测试",
+                "id": "1343"
+            }
+        ]
+    },
+    {
+        "id": 100010301,
+        "chapters": [
+            {
+                "article_count": 1,
+                "title": "开篇词",
+                "id": "589"
+            },
+            {
+                "article_count": 12,
+                "title": "模块一：Java虚拟机基本原理",
+                "id": "590"
+            },
+            {
+                "article_count": 12,
+                "title": "模块二：高效编译",
+                "id": "591"
+            },
+            {
+                "article_count": 10,
+                "title": "模块三：代码优化",
+                "id": "592"
+            },
+            {
+                "article_count": 3,
+                "title": "模块四：黑科技",
+                "id": "593"
+            },
+            {
+                "article_count": 2,
+                "title": "尾声",
+                "id": "594"
+            }
+        ]
+    },
+    {
+        "id": 100023501,
+        "chapters": [
+            {
+                "article_count": 4,
+                "title": "第一章：初识Spring",
+                "id": "201"
+            },
+            {
+                "article_count": 10,
+                "title": "第二章：JDBC必知必会",
+                "id": "202"
+            },
+            {
+                "article_count": 9,
+                "title": "第三章：O\/R Mapping实践",
+                "id": "204"
+            },
+            {
+                "article_count": 7,
+                "title": "第四章：NoSQL实践",
+                "id": "205"
+            },
+            {
+                "article_count": 8,
+                "title": "第五章：数据访问进阶",
+                "id": "210"
+            },
+            {
+                "article_count": 14,
+                "title": "第六章：Spring MVC实践",
+                "id": "215"
+            },
+            {
+                "article_count": 5,
+                "title": "第七章：访问Web资源",
+                "id": "221"
+            },
+            {
+                "article_count": 9,
+                "title": "第八章： Web开发进阶",
+                "id": "223"
+            },
+            {
+                "article_count": 8,
+                "title": "第九章：重新认识Spring Boot",
+                "id": "226"
+            },
+            {
+                "article_count": 11,
+                "title": "第十章：运行中的Spring Boot",
+                "id": "228"
+            },
+            {
+                "article_count": 5,
+                "title": "第十一章：Spring Cloud及Cloud Native概述",
+                "id": "238"
+            },
+            {
+                "article_count": 9,
+                "title": "第十二章：服务注册与发现",
+                "id": "354"
+            },
+            {
+                "article_count": 7,
+                "title": "第十三章：服务熔断",
+                "id": "439"
+            },
+            {
+                "article_count": 7,
+                "title": "第十四章：服务配置",
+                "id": "461"
+            },
+            {
+                "article_count": 4,
+                "title": "第十五章：Spring Cloud Stream",
+                "id": "544"
+            },
+            {
+                "article_count": 6,
+                "title": "第十六章：服务链路追踪",
+                "id": "549"
+            }
+        ]
+    }
+]

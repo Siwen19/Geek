@@ -7,35 +7,44 @@
   width: 100%;
   z-index: 1;
   background-color: rgb(254, 254, 254);
-  border-top: 1px solid #dddddd;
-  margin-top: 10px;
+  border-top: 1px solid #dddddd; 
 }
 
 .gk-foot--item {
   flex: 1;
   text-align: center;
-  padding: 8.5px 6px 6px;
+  padding: 2px;  
   font-size: 0;
   text-decoration: none;
   color: #a2a2a2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .gk-foot--item > span {
   display: inline-block;
   position: relative;
+  font-size: 24px; 
 }
 
 .gk-foot--icon {
   display: inline-block;
-  width: 22px;
-  height: 22px;
-  overflow: hidden;
-  margin-bottom: 3.5px;
+  width: 30px;
+  height: 34px;
+  overflow: hidden; 
 }
 
 .gk-foot--label {
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
-  line-height: 8px;
-  margin-bottom: 8px;
+  line-height: 8px; 
+  margin-top: .5vh;  
+}  
+
+.selected>span { 
+  color: #fa8919;
+  margin-bottom: 2px;
+  font-size: 28px;
 }
