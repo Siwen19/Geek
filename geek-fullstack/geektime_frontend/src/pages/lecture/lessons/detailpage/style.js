@@ -1,13 +1,9 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.div` 
     position: fixed;
-    top: 43px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100;
+    top: 50px;
+    width: 100%; 
     height: 100%;
     overflow: hidden;
     background-color: rgb(245, 245, 245);
@@ -23,8 +19,7 @@ export const Head = styled.div`
     padding: 0 15px;
     display: flex; 
     align-items: center;
-    background: #fff; 
-    border-bottom: 1px solid rgb(240, 240, 240);
+    background: #fff;  
   & > img {
       width: 8vw;
       height: 4vh; 
@@ -35,9 +30,8 @@ export const Head = styled.div`
       margin-left: 65vw;
   }
 `
-export const Content = styled.div`
+export const Content = styled.div`  
   position: fixed;
-  top: 90px;
-  bottom: 0;
-  width: 100%;
+  width: 100%; 
+  z-index: 100;
 `

@@ -9,7 +9,7 @@ import Comment from './comment/index';
 
 function Nav (props) {
   const { id } = useParams();
-  const [state, setState] = useState([]);
+  const [state, setState] = useState([<Introduction id={id} key={id} />]);
   const handleClick = (str, e) => {
       for (let child of e.target.parentNode.childNodes) {
           child.className = ''
@@ -37,6 +37,7 @@ function Nav (props) {
         <NavLink 
         to={`/lecture/lessons/${id}?tab=intro`}  
         onClick={handleClick.bind(this, 'intro')}
+        className="selected"
         >
           简介
         </NavLink>

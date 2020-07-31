@@ -8,8 +8,8 @@ export const NavContent = styled.div`
         justify-content: space-around;
         background-color: #fff;
         > a {
-            height: 45px !important;
-            line-height: 45px !important;
+            height: 35px !important;
+            line-height: 35px !important;
             text-decoration: none;
             display: block;  
             position: relative;
