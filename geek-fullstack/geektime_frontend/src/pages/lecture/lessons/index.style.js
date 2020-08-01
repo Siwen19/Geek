@@ -9,7 +9,9 @@ export const Content = styled.div`
   top: 40px;
   bottom: 55px; 
   width: 100%;  
+  
 `
+ 
 export const EnterLoading = styled.div`
   position: fixed;
   left: 0; right: 0; top: 0; bottom: 0;

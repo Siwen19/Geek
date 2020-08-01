@@ -11,6 +11,33 @@ export const Container = styled.div`
   overflow: hidden;
   background: #fff;
   transform-origin: right bottom; 
+  &.fly-enter,
+  &.fly-appear {
+    /* transform-origin: 100% 100%;
+    transform: rotateZ(90deg);  */
+    transform: rotateZ(30deg) translate3d(100%, 0, 0);
+  }
+  &.fly-enter-active,
+  &.fly-appear-active {
+    /* transform-origin: 100% 100%; 
+    transition: all .3s;
+    transform: rotateZ(0deg);  */
+    transition: transform .3s;
+    transform: rotateZ(0deg) translate3d(0, 0, 0);
+  }
+  &.fly-exit {
+    /* transform-origin: 100% 100%; 
+    transform: rotateZ(0deg);  */
+    transform: rotateZ(0deg) translate3d(0, 0, 0);
+  }
+  &.fly-exit-active {
+    /* transform-origin: 100% 100%; 
+    transition: all .3s;
+    transform: rotateZ(90deg); */
+    transition: transform .3s;
+    transform: rotateZ(30deg) translate3d(100%, 0, 0);
+    
+  }
 `
 
 export const Head = styled.div`

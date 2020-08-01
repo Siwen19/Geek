@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import Path from "./learn-path/Path";
 import Direction from "./lesson-direction/Direction";
 import AllLessons from "./allLessons/allLessons";
-import { Tab, Content, EnterLoading } from "./index.style";
+import { Tab, Content, EnterLoading, Container } from "./index.style";
 import { connect } from "react-redux";
 import * as actionTypes from "./store/actions";
 import { renderRoutes } from "react-router-config";
@@ -24,14 +24,9 @@ function Lessons(props) {
         pullDownLoading,
         pullUpRefresh,
         pageCount,
-        pullDownRefresh,
-        refreshMoreLessonsInfoRequest,
+        pullDownRefresh, 
     } = props;
 
-    const [showStatus, setShowStatus] = useState(true);
-    const setShowStatusFalse = useCallback(() => {
-        setShowStatus(false);
-    }, []);
     useEffect(() => {
         if (!studyPath.length) {
             getLessonsListDataDispatch();
@@ -43,8 +38,7 @@ function Lessons(props) {
 
     const handlePullDown = () => {
         pullDownRefresh(allLessons, pageCount);
-    };
-
+    }; 
     return (
         <>
             {renderRoutes(route.routes)}
@@ -61,14 +55,14 @@ function Lessons(props) {
                         <Direction data={lessonsDirection} />
                         <AllLessons data={allLessons} path={route} />
                     </Tab>
+                    {/* 入场加载动画 */}
+                    {enterLoading ? (
+                        <EnterLoading>
+                            <Loading></Loading>
+                        </EnterLoading>
+                    ) : null}
                 </Scroll>
             </Content>
-            {/* 入场加载动画 */}
-            {enterLoading ? (
-                <EnterLoading>
-                    <Loading></Loading>
-                </EnterLoading>
-            ) : null}
         </>
     );
 }

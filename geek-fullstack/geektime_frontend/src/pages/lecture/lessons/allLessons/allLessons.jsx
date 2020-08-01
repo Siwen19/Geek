@@ -1,18 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Item from './item/Item';
 import './style.css';
 import { Wrap, TabNav, InnerDiv, InnerItem, NavWrapper, ContentItem } from './allLessons.style';
-import { TabLesson, TabLeftItem } from '../style';
-import { renderRoutes } from 'react-router-config';
-import { CSSTransition } from 'react-transition-group';
+import { TabLesson, TabLeftItem } from '../style'; 
 
 export default function All(props) {
     const { data, path } = props;
-    const newData = data !== undefined ? data : [];
-    // const [showButton, setShowButton] = useState(true);
-  const [showMessage, setShowMessage] = useState(true); 
-    const item = newData.map((ele, index) => 
-    <Item data={ele} key={index} path={path} onClick={() => setShowMessage(false)} />)
+    const newData = data !== undefined ? data : []; 
+    const item = newData.map((item, i) =>
+        <Item data={item} key={i} path={path}/>)
     return (
         <Wrap>
             <TabLesson>
@@ -48,18 +44,9 @@ export default function All(props) {
                     </InnerItem>
                 </NavWrapper>
             </TabNav>
-            <CSSTransition
-                in={showMessage}
-                timeout={300}
-                classNames="fly"
-                unmountOnExit 
-            >
-                <div>
-                    <ContentItem>
-                        {item}
-                    </ContentItem>
-                </div>
-            </CSSTransition>
+            <ContentItem>
+                {item}
+            </ContentItem>
         </Wrap>
     )
 };
