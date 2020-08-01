@@ -43,7 +43,7 @@ const proxy = {
       data = lsninfos.data.filter((e) => e.id == requestId);
     }
     res.json({
-      infos: data,
+      "intros": data,
     });
   },
   "GET /study/study.json": require("./study/study.json"),

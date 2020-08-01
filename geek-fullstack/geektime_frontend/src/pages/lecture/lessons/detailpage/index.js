@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import { useHistory, useParams, NavLink } from "react-router-dom";
-import { Container, Head, Content } from "./style";
+import { Container, Head, Content, Background } from "./style";
 import Scroll from "../../../../components/scroll/Scroll";
 import TabHead from "./head/Head";
 import Nav from "./Nav/index";
@@ -9,7 +9,7 @@ import Foot from "./foot/index";
 
 function Page({ route }) {
   return (
-    <>
+    <Background>
       {renderRoutes(route.routes)}
       <Head>
         <NavLink to="/lecture/lessons">
@@ -24,19 +24,18 @@ function Page({ route }) {
         </NavLink>
         <img src="/asserts/star.png" className="star" />
         <img src="asserts/send.png" />
-      </Head>
+      </Head> 
       
-        <Content>
-          <Scroll>
+          <Content>
+        <Scroll>
           <Container>
             <TabHead />
             <Nav route={route} />
-      </Container>
-            </Scroll>
-        </Content>
-            <Foot />
-          
-    </>
+          </Container>
+        </Scroll>
+      </Content>
+      <Foot />
+    </Background>
   );
 }
 export default Page;

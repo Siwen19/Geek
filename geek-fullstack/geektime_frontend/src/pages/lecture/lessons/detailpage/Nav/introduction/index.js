@@ -6,14 +6,12 @@ import * as actionTypes from '../../store/actionCreators';
 import Scroll from '../../../../../../components/scroll/Scroll';
 
 
-function Introduction(props) {
-    console.log(props);
+function Introduction(props) { 
     const { introContent, id } = props;
     const { getIntroDataDispatch } = props;
     useEffect(() => { 
         if (!introContent.length) getIntroDataDispatch(id)
-    }, []);
-    console.log(introContent);
+    }, []); 
     return (
         <IntroductionWrap> 
                 <div dangerouslySetInnerHTML={{ __html: introContent.length && introContent[0].column_intro }}></div>

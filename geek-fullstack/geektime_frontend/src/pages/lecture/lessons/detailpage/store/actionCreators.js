@@ -20,7 +20,8 @@ export const getTitleContent = () => {
     const { personColumn } = getState();
     getTitleContentRequest(personColumn.personId.id)
       .then((data) => { 
-        dispatch(changeTitleContent(data.data.infos[0]));
+        console.log(data)
+        dispatch(changeTitleContent(data.data.intros[0]));
       })
       .catch(() => {
         console.log("个人标题请求出错");
@@ -34,7 +35,7 @@ export const getIntroContent = () => {
     getIntroContentRequest(personColumn.personId.id)
       .then((data) => {
         console.log(data);
-        dispatch(changeIntroContent(data.data.infos))
+        dispatch(changeIntroContent(data.data.intros))
       })
       .catch(() => {
         console.log("课程简介请求失败");

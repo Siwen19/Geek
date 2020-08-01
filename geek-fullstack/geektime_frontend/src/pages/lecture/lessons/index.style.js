@@ -8,7 +8,7 @@ export const Content = styled.div`
   position: fixed;
   top: 40px;
   bottom: 55px; 
-  width: 100%; 
+  width: 100%;  
 `
 export const EnterLoading = styled.div`
   position: fixed;

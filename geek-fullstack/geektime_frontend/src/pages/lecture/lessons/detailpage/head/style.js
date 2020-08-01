@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const TabHead = styled.div`
-    position: relative;
+    position: relative; 
     padding: 20px 20px 17px 20px;
     overflow: hidden;
     box-sizing: border-box;
-    background-color: #fff;  
+    background-color: #fff; 
     border-top: 1px solid rgb(240, 240, 240); 
 `
 export const HeadInner = styled.div`

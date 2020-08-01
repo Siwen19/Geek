@@ -1,14 +1,17 @@
 import styled from 'styled-components';
 
 export const Container = styled.div` 
-    position: fixed;
-    top: 50px;
-    width: 100%; 
-    height: 100%;
-    overflow: hidden;
     background-color: rgb(245, 245, 245);
     transform-origin: right bottom; 
     font-family: PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, Helvetica, sans-serif;
+`
+export const Background = styled.div`
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    width: 100vw; 
+    background-color: rgb(245, 245, 245);
+    height: 100vh; 
 `
 export const Head = styled.div`
     position: fixed;
@@ -32,6 +35,8 @@ export const Head = styled.div`
 `
 export const Content = styled.div`  
   position: fixed;
-  width: 100%; 
+  top: 48px;
+  bottom: 15px;
+  width: 100%;  
   z-index: 100;
 `

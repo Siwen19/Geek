@@ -1,21 +1,37 @@
-import React, { useEffect, useRef } from 'react';
-import Path from './learn-path/Path';
-import Direction from './lesson-direction/Direction';
-import AllLessons from './allLessons/allLessons';
-import { Tab, Content, EnterLoading } from './index.style';
-import { connect } from 'react-redux';
-import * as actionTypes from './store/actions';
-import { renderRoutes } from 'react-router-config';
-import LazyLoad, { forceCheck } from 'react-lazyload';
-import Scroll from '../../../components/scroll/Scroll';
-import Loading from '../../../baseUI/loading/index';
+import React, { useEffect, useState, useCallback } from "react";
+import Path from "./learn-path/Path";
+import Direction from "./lesson-direction/Direction";
+import AllLessons from "./allLessons/allLessons";
+import { Tab, Content, EnterLoading } from "./index.style";
+import { connect } from "react-redux";
+import * as actionTypes from "./store/actions";
+import { renderRoutes } from "react-router-config";
+import LazyLoad, { forceCheck } from "react-lazyload";
+import Scroll from "../../../components/scroll/Scroll";
+import Loading from "../../../baseUI/loading/index";
 
-function Lessons(props) {  
-    const scrollRef = useRef(null);
-    const { route, studyPath, lessonsDirection, allLessons, getLessonsListDataDispatch } = props;
-    const { enterLoading, pullUpLoading, pullDownLoading, pullUpRefresh, pageCount, 
-        pullDownRefresh, refreshMoreLessonsInfoRequest } = props;
-    // console.log(studyPath, lessonsDirection, allLessons, enterLoading); 
+function Lessons(props) {
+    const {
+        route,
+        studyPath,
+        lessonsDirection,
+        allLessons,
+        getLessonsListDataDispatch,
+    } = props;
+    const {
+        enterLoading,
+        pullUpLoading,
+        pullDownLoading,
+        pullUpRefresh,
+        pageCount,
+        pullDownRefresh,
+        refreshMoreLessonsInfoRequest,
+    } = props;
+
+    const [showStatus, setShowStatus] = useState(true);
+    const setShowStatusFalse = useCallback(() => {
+        setShowStatus(false);
+    }, []);
     useEffect(() => {
         if (!studyPath.length) {
             getLessonsListDataDispatch();
@@ -27,11 +43,11 @@ function Lessons(props) {
 
     const handlePullDown = () => {
         pullDownRefresh(allLessons, pageCount);
-    }; 
+    };
 
     return (
         <>
-            {renderRoutes(route.routes)} 
+            {renderRoutes(route.routes)}
             <Content>
                 <Scroll
                     onScroll={forceCheck}
@@ -48,35 +64,41 @@ function Lessons(props) {
                 </Scroll>
             </Content>
             {/* 入场加载动画 */}
-            {enterLoading ? <EnterLoading><Loading></Loading></EnterLoading> : null}
+            {enterLoading ? (
+                <EnterLoading>
+                    <Loading></Loading>
+                </EnterLoading>
+            ) : null}
         </>
-
-    )
+    );
 }
 
-export default connect(function mapStateToProps(state) {
-    return {
-        studyPath: state.lessons.studyPath,
-        lessonsDirection: state.lessons.lessonsDirection,
-        allLessons: state.lessons.allLessons,
-        enterLoading: state.lessons.enterLoading,
-        pullUpLoading: state.lessons.pullUpLoading,
-        pageCount: state.lessons.listOffset,
-        pullDownLoading: state.lessons.pullDownLoading,
-    };
-}, function mapDispatchToProps(dispatch) {
-    return {
-        getLessonsListDataDispatch() {
-            dispatch(actionTypes.getLessonsList());
-        }, 
-        pullUpRefresh() {
-            dispatch(actionTypes.changePullUpLoading(true));
-            dispatch(actionTypes.refreshMoreLessonsInfoRequest())
-        },
-        //顶部下拉刷新
-        pullDownRefresh() {
-            dispatch(actionTypes.getLessonsList());
-            dispatch(actionTypes.changePullDownLoading(true));  
-        }
+export default connect(
+    function mapStateToProps(state) {
+        return {
+            studyPath: state.lessons.studyPath,
+            lessonsDirection: state.lessons.lessonsDirection,
+            allLessons: state.lessons.allLessons,
+            enterLoading: state.lessons.enterLoading,
+            pullUpLoading: state.lessons.pullUpLoading,
+            pageCount: state.lessons.listOffset,
+            pullDownLoading: state.lessons.pullDownLoading,
+        };
+    },
+    function mapDispatchToProps(dispatch) {
+        return {
+            getLessonsListDataDispatch() {
+                dispatch(actionTypes.getLessonsList());
+            },
+            pullUpRefresh() {
+                dispatch(actionTypes.changePullUpLoading(true));
+                dispatch(actionTypes.refreshMoreLessonsInfoRequest());
+            },
+            //顶部下拉刷新
+            pullDownRefresh() {
+                dispatch(actionTypes.getLessonsList());
+                dispatch(actionTypes.changePullDownLoading(true));
+            },
+        };
     }
-})(Lessons);
+)(Lessons);

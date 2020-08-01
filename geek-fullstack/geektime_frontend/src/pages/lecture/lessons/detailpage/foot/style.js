@@ -7,6 +7,7 @@ export const FootWrap = styled.div`
     right: 0;
     height: 50px;
     z-index: 100;
+    font-family: PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, Helvetica, sans-serif;
     background: #fff;
     > div {
         display: flex;
@@ -30,12 +31,12 @@ export const FootWrap = styled.div`
                     left: 0;
                     font-size: 14px;
                     font-weight: 400;
-                    color: #fa8919;
+                    color: #fa8919; 
                 }
                 > span:last-child {
                     font-size: 25px;
                     font-weight: 600;
-                    color: #fa8919;
+                    color: #fa8919; 
                 }
             }
             > div:last-child {
@@ -69,13 +70,13 @@ export const FootWrap = styled.div`
             justify-content: center;
             font-size: 15px;
             font-weight: 500;
-            color: #fa8919;
+            color: #fa8919; 
             background: linear-gradient(135deg, rgba(250,137,25,0.2), rgba(255,165,75,0.2));
-            > div {
+            > div:first-child {
                 font-size: 16px;
                 font-weight: 500;
             }
-            >div {
+            > div:last-child {
                 margin-top: -5px;
                 font-size: 12px;
                 font-weight: 500;
@@ -94,11 +95,11 @@ export const FootWrap = styled.div`
             justify-content: center;
             color: #fefefe;
             background: #fa8919;
-            > div {
+            > div:first-child {
                 font-size: 16px;
                 font-weight: 500;
             }
-            > div {
+            > div:last-child {
                 margin-top: -5px;
                 font-size: 12px;
                 font-weight: 500;
