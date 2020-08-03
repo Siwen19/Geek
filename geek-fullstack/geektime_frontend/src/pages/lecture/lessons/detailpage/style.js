@@ -11,7 +11,7 @@ export const Background = styled.div`
   top: 0;
   z-index: 200;
   width: 100vw;
-  background-color: red;
+  background-color: #fff;
   z-index: 22;
   height: 100vh;
   &.fly-enter,

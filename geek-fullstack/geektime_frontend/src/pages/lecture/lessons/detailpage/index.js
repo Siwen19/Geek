@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useHistory, useParams, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Container, Head, Content, Background } from "./style";
 import Scroll from "../../../../components/scroll/Scroll";
 import TabHead from "./head/Head";

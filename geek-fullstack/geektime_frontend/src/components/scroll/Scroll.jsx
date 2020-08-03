@@ -2,8 +2,7 @@ import React, { forwardRef, useState,useEffect, useRef, useImperativeHandle, use
 import PropTypes from "prop-types"
 import BScroll from "better-scroll"
 import styled from 'styled-components';
-import Loading from '../../baseUI/loading/index';
-// import Loading2 from '../../baseUI/loading-v2/index';
+import Loading from '../../baseUI/loading/index'; 
 import { debounce } from "../../api/utils";
 
 const ScrollContainer = styled.div`

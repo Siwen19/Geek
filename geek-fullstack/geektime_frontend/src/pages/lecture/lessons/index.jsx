@@ -1,12 +1,12 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect } from "react";
 import Path from "./learn-path/Path";
 import Direction from "./lesson-direction/Direction";
 import AllLessons from "./allLessons/allLessons";
-import { Tab, Content, EnterLoading, Container } from "./index.style";
+import { Tab, Content, EnterLoading } from "./index.style";
 import { connect } from "react-redux";
 import * as actionTypes from "./store/actions";
 import { renderRoutes } from "react-router-config";
-import LazyLoad, { forceCheck } from "react-lazyload";
+import { forceCheck } from "react-lazyload";
 import Scroll from "../../../components/scroll/Scroll";
 import Loading from "../../../baseUI/loading/index";
 

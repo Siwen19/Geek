@@ -1,13 +1,13 @@
 import React, { useState,useEffect} from 'react'
 import Swiper from 'swiper/bundle'
-import './Swiper.css'
+import './Swiper.css';  
 import 'swiper/swiper-bundle.cjs'
 
 export default function MySwiper() {
     let [state] = useState([
-        ["/asserts/findSwiper/swiper1.png"],
-        ["/asserts/findSwiper/swiper2.png"],
-        ["/asserts/findSwiper/swiper3.png"]
+        ["/swiper1.png"],
+        ["/swiper2.png"],
+        ["/swiper3.png"]
     ]);
     useEffect(() => {
         new Swiper(".swiper-container", {
@@ -27,7 +27,7 @@ export default function MySwiper() {
                     {
                         state.map((slider, id) => {
                             return (
-                                <div className="swiper-slide" key={id}>
+                                <div className="swiper-slide" key={id}>  
                                     <img src={slider} alt="" width="200px"/>
                                 </div>
                             );

@@ -13,8 +13,7 @@ function Find() {
         fetch('http://localhost:8080/find/find.json')
             .then(data => data.json())
             .then(res => setFindList(res))
-    }, [])
-    // console.log(findList);
+    }, []) 
     const newShop = findList.shop;
     const newGku = findList.gku;
     const newClass = findList.class;
