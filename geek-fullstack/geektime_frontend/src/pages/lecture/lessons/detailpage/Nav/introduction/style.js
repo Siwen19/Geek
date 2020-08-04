@@ -104,6 +104,7 @@ export const IntroductionWrap = styled.div`
       background: #f6f7fb;
       border-radius: 8px;
       > div {
+        display: flex;
         > img {
           width: 50px;
           height: 50px;
@@ -114,7 +115,12 @@ export const IntroductionWrap = styled.div`
           border: 0;
         }
         > div {
+          padding-left: 8px;
+          padding-right: 12px;
           > h3 {
+            font-size: 17px;
+            font-weight: 600;
+            color: #353535;
             position: relative;
             margin-top: 10px;
             margin-bottom: 13px;
@@ -125,6 +131,13 @@ export const IntroductionWrap = styled.div`
             font-size: 13px;
             font-weight: 400;
             color: #888;
+          }
+          > div {
+            position: absolute;
+            top: 11px;
+            right: 10px;
+            font-size: 12px;
+            color: #999;
           }
         }
       }
