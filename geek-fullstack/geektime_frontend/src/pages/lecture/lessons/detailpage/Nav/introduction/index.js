@@ -5,7 +5,7 @@ import * as actionTypes from "../../store/actionCreators";
 
 function Introduction(props) {
   const { introContent, id } = props;
-  const { getIntroDataDispatch } = props;
+  const { getIntroDataDispatch } = props; 
   useEffect(() => {
     if (!introContent.length) getIntroDataDispatch(id);
   }, []);
@@ -34,12 +34,11 @@ function Introduction(props) {
         <div>
           <div>
             <img
-              src="https://static001.geekbang.org/resource/image/37/47/37db2297526f625866b66cee9aea0547.jpg?x-oss-process=image/resize,m_fill,h_200,w_200"
-              alt="avatar"
+              src={introContent.length && introContent[0].author_header}
             />
             <div>
-              <h3>王争</h3>
-              <div>前Google工程师，《数据结构与算法之美》专栏作者</div>
+              <h3>{introContent.length && introContent[0].author_name}</h3>
+              <div>{introContent.length && introContent[0].author_intro}，《{introContent.length && introContent[0].column_title}》专栏作者</div>
             </div>
             <div>
               <img src="/asserts/right.png" />

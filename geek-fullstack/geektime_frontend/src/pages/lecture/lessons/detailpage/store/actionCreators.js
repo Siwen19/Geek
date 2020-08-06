@@ -34,7 +34,7 @@ export const getIntroContent = () => {
     const { personColumn } = getState();
     getIntroContentRequest(personColumn.personId.id)
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         dispatch(changeIntroContent(data.data.intros))
       })
       .catch(() => {
@@ -48,6 +48,7 @@ export const getCatalogContent = () => {
     getCatalogContentRequest(personColumn.personId.id)
       .then((data) => {
         console.log(data);
+        dispatch(changeIntroContent(data.data.catalog))
       })
       .catch(() => {
         console.log("课程目录请求失败");

@@ -10,6 +10,7 @@ import Comment from './comment/index';
 function Nav (props) {
   const { id } = useParams();
   const [state, setState] = useState([<Introduction id={id} key={id} />]);
+  console.log(state)
   const handleClick = (str, e) => {
       for (let child of e.target.parentNode.childNodes) {
           child.className = ''

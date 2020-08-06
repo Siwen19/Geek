@@ -5,24 +5,24 @@ import { connect } from 'react-redux';
 import * as actionTypes from '../store/actionCreators';
 import { useParams } from 'react-router';
 
-function Foot(props) { 
-    console.log(props)
-    const { introContent, id } = props;
-    const { getIntroDataDispatch } = props;
+function Foot(props) {  
+    const { titleContent, id } = props;
+    const { getTitleDataDispatch } = props;
+    console.log(titleContent)
     const currentId = useParams();
     useEffect(() => { 
-        if (id !== currentId) getIntroDataDispatch(currentId)
-    }, []);
+        if (id !== currentId) getTitleDataDispatch(currentId)
+    }, []); 
     return (
         <FootWrap>
             <div>
                 <div>
                     <div>
                         <span>¥</span>
-                        <span>{introContent.length && (introContent[0].first_promo.price / 100)}</span>
+                        <span>{Object.keys(titleContent).length && (titleContent.price.sale / 100)}</span>
                     </div>
                     <div>
-                        <span>¥</span>{introContent.length && (introContent[0].column_price / 100)}
+                        <span>¥</span>{Object.keys(titleContent).length && (titleContent.price.market / 100)}
                         <div></div>
                     </div>
                 </div>
@@ -30,14 +30,14 @@ function Foot(props) {
                     <div>单独订阅</div>
                     <div>
                         <span>¥</span>
-                        <span>{introContent.length && (introContent[0].first_promo.price / 100)}</span>
+                        <span>{Object.keys(titleContent).length && (titleContent.price.sale / 100)}</span>
                     </div>
                 </div>
                 <div>
                     <div>去开团</div>
                     <div>
                         <span>¥</span>
-                        <span>{introContent.length && (introContent[0].groupbuy.price / 100)}</span>
+                        <span>{Object.keys(titleContent).length && (titleContent.price.market / 100)}</span>
                     </div>
                 </div>
             </div>
@@ -46,14 +46,14 @@ function Foot(props) {
 }
 const mapStateToProps = (state) => {
     return {
-        introContent: state.personColumn.introContent
+        titleContent: state.personColumn.titleContent
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        getIntroDataDispatch() {
-            dispatch(actionTypes.getIntroContent());
+        getTitleDataDispatch() {
+            dispatch(actionTypes.getTitleContent());
         }
     }
 }

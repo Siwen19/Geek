@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const IntroductionWrap = styled.div`
-  padding: 12px 0 100px 21px;
+  padding: 12px 0 30px 21px;
   width: 95%;
   min-height: 738px;
   box-sizing: border-box;
@@ -71,7 +71,7 @@ export const IntroductionWrap = styled.div`
       display: block;
     }
   }
-  > div:nth-child(2) { 
+  > div:nth-child(2) {
     border-bottom: 1px solid rgb(240, 240, 240);
     > div:first-child {
       position: relative;
@@ -201,7 +201,7 @@ export const IntroductionWrap = styled.div`
       > div:nth-child(2) {
         position: relative;
         margin-top: 20px;
-        padding-right: 21px; 
+        padding-right: 21px;
         > div {
           margin-top: 0;
           margin-bottom: 20px;
@@ -285,6 +285,26 @@ export const IntroductionWrap = styled.div`
             border-radius: 6px;
           }
         }
+        > h1 {
+          position: relative;
+          margin-top: 10px;
+          margin-bottom: 13px;
+          font-size: 16px;
+          font-weight: 600;
+          color: #404040;
+        }
+        > h1:before {
+          content: "";
+          width: 16px;
+          height: 16px;
+          display: block;
+          background: linear-gradient(0deg, #f9f0e3, #efcea5);
+          opacity: 0.5;
+          position: absolute;
+          left: -8px;
+          border-radius: 50%;
+          z-index: -1;
+        }
       }
     }
   }
@@ -322,7 +342,56 @@ export const IntroductionWrap = styled.div`
       padding-right: 21px;
       > div {
         max-height: none;
-        margin-top: -10px; 
+        margin-top: -10px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #353535;
+        white-space: normal;
+        word-break: break-word;
+        line-height: 28px;
+        overflow: hidden;
+        > p {
+          > img {
+            display: block;
+            width: 100%;
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+  }
+  > div:nth-child(5) {
+    > div:first-child {
+      position: relative; 
+      padding-right: 14px;
+      > h2 {
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 13px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #404040;
+      }
+      > h2:before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        display: block;
+        background: linear-gradient(0deg, #f9f0e3, #efcea5);
+        opacity: 0.5;
+        position: absolute;
+        left: -8px;
+        border-radius: 50%;
+        z-index: -1;
+      }
+    }
+    > div:nth-child(2) { 
+      position: relative; 
+      padding-right: 21px;
+      > div {
+        max-height: none;
+        margin-top: -10px;
+        margin-bottom: 20px;
         font-size: 15px;
         font-weight: 400;
         color: #353535;
@@ -334,30 +403,6 @@ export const IntroductionWrap = styled.div`
           margin-top: 10px;
         }
       }
-    }
-    > div:nth-child(3) {
-    }
-  }
-  > div:nth-child(5) {
-    > div:first-child {
-    }
-    > div:nth-child(2) {
-    }
-    > div:nth-child(3) {
-    }
-  }
-  > div:nth-child(6) {
-    > div:first-child {
-    }
-    > div:nth-child(2) {
-    }
-    > div:nth-child(3) {
-    }
-  }
-  > div:nth-child(7) {
-    > div:first-child {
-    }
-    > div:nth-child(2) {
-    }
-  }
+    } 
+  } 
 `;
