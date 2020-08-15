@@ -11,6 +11,7 @@ import Scroll from "../../../components/scroll/Scroll";
 import Loading from "../../../baseUI/loading/index";
 
 function Lessons(props) {
+    console.log(props)
     const {
         route,
         studyPath,

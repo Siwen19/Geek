@@ -1,5 +1,8 @@
 import { axiosInstance } from './config';
 
+export const getFindInfoRequest = () => { 
+    return axiosInstance.get("/find/find");
+}
 export const getLessonsListRequest = () => {
     return axiosInstance.get("/lessons/lesson");
 }
@@ -20,4 +23,7 @@ export const getRecommendContentRequest = (id) => {
 }
 export const getCommentContentRequest = (id) => {
     return axiosInstance.get(`/lessons/lessons/${id}?tab=comment`)
+}
+export const getHomeInfoRequest = () => { 
+    return axiosInstance.get("/home/home");
 }

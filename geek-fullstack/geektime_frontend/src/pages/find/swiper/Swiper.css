@@ -3,7 +3,17 @@
     height: 180px;
     position: relative;
     display: flex; 
+    margin-top: 2vh;
 } 
+
+.swiper-container img {
+    width: 90%;
+    height: 60%;
+    top: 2vh;
+    margin-left: 4.5%;
+    position: absolute;
+    border-radius: 5px;
+}
 
 .swiper-pagination-bullet-active {
     background-color: red

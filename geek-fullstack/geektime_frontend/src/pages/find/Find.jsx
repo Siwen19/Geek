@@ -1,22 +1,25 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import './Find.css'
 import { Top, Search, Content } from './Find.style'
-import MySwiper from './swiper/Swiper';
 import Shop from './shop/Shop';
 import Gku from './gku/Gku';
 import Class from './class/Class';
 import Scroll from '../../components/scroll/Scroll';
+import { connect } from 'react-redux';
+import * as actionTypes from './store/actions'; 
+import MySwiper from './swiper/Swiper'
 
-function Find() {
-    const [findList, setFindList] = useState([]);
+function Find(props) { 
+    const { supermarket, university, lecture } = props
+    const { getFindInfoDispatch } = props
+
     useEffect(() => {
-        fetch('http://localhost:8080/find/find.json')
-            .then(data => data.json())
-            .then(res => setFindList(res))
-    }, []) 
-    const newShop = findList.shop;
-    const newGku = findList.gku;
-    const newClass = findList.class;
+        getFindInfoDispatch(); 
+    }, [])
+
+    const newShop = supermarket;
+    const newGku = university;
+    const newClass = lecture;
     return (
         <>
             <Top>
@@ -25,13 +28,14 @@ function Find() {
             </Top>
             <Content>
                 <Scroll>
-                    <div className="scroll-container"> 
+                    <div className="scroll-container">
                         <Search>
                             <span className="iconfont">&#xe633;</span>
                             <input className="search" placeholder="搜索课程、课程内容、每日一课等" />
                         </Search>
 
                         <MySwiper />
+
                         <div className="speech">
                             <div className="speech-title">
                                 <img src="asserts/find-images/speech.png" alt="" className="title-img" />
@@ -109,7 +113,7 @@ function Find() {
 
                         <div className="buttonVIP">
                             开通VIP畅看，低至 1 元 / 天
-            </div>
+                        </div>
                     </div>
                 </Scroll>
             </Content>
@@ -117,4 +121,16 @@ function Find() {
     )
 }
 
-export default Find;
+export default connect((state) => {
+    return {
+        supermarket: state.findPageData.shop,
+        university: state.findPageData.university,
+        lecture: state.findPageData.class
+    }
+}, (dispatch) => {
+    return {
+        getFindInfoDispatch() {
+            dispatch(actionTypes.getFindInfo())
+        }
+    }
+})(Find);

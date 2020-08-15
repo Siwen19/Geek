@@ -23,7 +23,7 @@ export default (state = defaultContent, action) => {
         case CHANGE_TITLE_CONTENT:
             return {...state, titleContent: action.data} 
         case CHANGE_INTRODUCTION_CONTENT:
-            return {...state, introContent: action.data}
+            return {...state, introContent: action.data!==undefined && action.data}
         case CHANGE_CATALOGUE_CONTENT:
             return {...state, catalogContent: action.data}
         case CHANGE_RECOMMEND_CONTENT:

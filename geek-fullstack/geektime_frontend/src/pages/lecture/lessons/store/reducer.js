@@ -7,7 +7,7 @@ const defaultList = {
     enterLoading: true,
     pullUpLoading: false,
     pullDownLoading: false,
-    listOffset: 0, // 请求列表的偏移不是page，是个数
+    listOffset: 0, 
 }
 
 export default (state = defaultList, action) => { 

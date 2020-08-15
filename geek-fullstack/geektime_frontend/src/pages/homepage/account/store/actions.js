@@ -1,8 +1,9 @@
-export const INVEST_MONEY = "INVEST_MONEY"; 
-
+import {
+    INVEST_MONEY, 
+} from './constants' 
 export const changeDefaultMoney = (data) => {
     return {
         type: INVEST_MONEY,
-        data
+        payload: data
     }
-}
+} 

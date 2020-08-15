@@ -19,8 +19,7 @@ export const getTitleContent = () => {
   return (dispatch, getState) => {
     const { personColumn } = getState();
     getTitleContentRequest(personColumn.personId.id)
-      .then((data) => { 
-        console.log(data)
+      .then((data) => {  
         dispatch(changeTitleContent(data.data.intros[0]));
       })
       .catch(() => {
@@ -47,7 +46,7 @@ export const getCatalogContent = () => {
     const { personColumn } = getState();
     getCatalogContentRequest(personColumn.personId.id)
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         dispatch(changeIntroContent(data.data.catalog))
       })
       .catch(() => {
@@ -60,7 +59,7 @@ export const getRecommendContent = () => {
     const { personColumn } = getState();
     getRecommendContentRequest(personColumn.personId.id)
       .then((data) => {
-        console.log(data);
+        // console.log(data);
       })
       .catch(() => {
         console.log("课程推荐请求失败");
@@ -73,6 +72,7 @@ export const getCommentContent = () => {
     getCommentContentRequest(personColumn.personId.id)
       .then((data) => {
         console.log(data);
+        dispatch(changeCommentContent(data.data))
       })
       .catch(() => {
         console.log("课程评论请求失败");

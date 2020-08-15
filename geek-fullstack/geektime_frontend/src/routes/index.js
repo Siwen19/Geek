@@ -24,7 +24,7 @@ const IntroductionLayout = lazy(() => import("../pages/lecture/lessons/detailpag
 const RecommendLayout = lazy(() => import("../pages/lecture/lessons/detailpage/Nav/recommend/index"));
 const CommentLayout = lazy(() => import("../pages/lecture/lessons/detailpage/Nav/comment/index"));
 const CategoryLayout = lazy(() => import("../pages/lecture/lessons/detailpage/Nav/category/index"));
-
+const PaymentTable = lazy(() => import("../pages/order/index"))
 
 export default  [
     {
@@ -105,7 +105,10 @@ export default  [
                   }
                 ] 
               },
-              
+              {
+                path: '/payment',
+                component: SuspenseComponent(PaymentTable),
+              }
           ]
         }
       ]

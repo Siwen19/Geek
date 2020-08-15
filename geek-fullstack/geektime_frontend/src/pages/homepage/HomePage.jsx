@@ -3,11 +3,11 @@ import './HomePage.css';
 import Header from './header/Header';
 import Navigation from './navigation/Navigation';
 import Article from './article/Article';
-import { connect } from 'react-redux';
-import { changeDefaultMoney } from './account/store/actions';
+import { connect } from 'react-redux'; 
 import { renderRoutes } from 'react-router-config';
 import Scroll from '../../components/scroll/Scroll';
 import styled from 'styled-components';
+import * as actionTypes from './store/actions'
 
 export const Content = styled.div`
   position: fixed;
@@ -18,15 +18,13 @@ export const Content = styled.div`
 `
 
 function HomePage(props) {
-    const { route, investMoney } = props;
-    const [homeList, setState] = useState([]);
-    useEffect(() => {
-        fetch('http://localhost:8080/rest/homepage')
-            .then(data => data.json())
-            .then(res => setState(res))
+    const { route, homeList, remain } = props;  
+    const { getHomePageDataDispatch } = props; 
+    useEffect(() => { 
+        getHomePageDataDispatch();
     }, [])
     const aticle = Object.keys(homeList).map((ele, i) =>
-        <Article data={homeList[ele]} path={route} key={i} remain={investMoney} />
+        <Article data={homeList[ele]} path={route} key={i} remain={remain}/>
     );
     return (
         <>
@@ -45,14 +43,15 @@ function HomePage(props) {
 }
 const mapStateToProps = (state) => {
     return {
-        investMoney: state.investMoney.money,
+        remain: state.investMoney.money,
+        homeList: state.homeData.list
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
-    return {
-        changeInvestMoney(data) {
-            dispatch(changeDefaultMoney(data))
+    return { 
+        getHomePageDataDispatch() {
+            dispatch(actionTypes.getListInfo())
         }
     }
 }

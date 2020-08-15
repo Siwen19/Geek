@@ -7,7 +7,7 @@ const recommendInfos = require("./lessons/recommend.json");
 const commentInfos = require("./lessons/comments.json");
 
 const proxy = {
-  "GET /rest/homepage": require("./homepage/homepage.json"),
+  "GET /home/home": require("./homepage/homepage.json"),
   "GET /lessons/lesson": require("./lessons/lesson.json"),
   "GET /lessons/lessons": (req, res) => {
     const { offset } = req.query;
@@ -47,7 +47,7 @@ const proxy = {
     });
   },
   "GET /study/study.json": require("./study/study.json"),
-  "GET /find/find.json": require("./find/find.json"),
+  "GET /find/find": require("./find/find.json"),
 };
 
 module.exports = proxy;

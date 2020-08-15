@@ -21,11 +21,13 @@ function Account(props) {
     window.history.back();
   }, []);
   const handleClickEvent = (e) => {
-    for (let child of e.target.parentNode.childNodes) {
-      child.style.backgroundColor = "rgb(247, 247, 247)";
+    if (e.target.id) {
+      for (let child of e.target.parentNode.childNodes) { 
+        child.style.backgroundColor = "rgb(247, 247, 247)";
+      } 
+      e.target.style.backgroundColor = "orange";
+      setState(e.target.id);
     }
-    e.target.style.backgroundColor = "orange";
-    setState(e.target.id);
   };
   const handleInvestMoney = () => {
     let wrapper = document.querySelector(".wrapper");

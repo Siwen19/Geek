@@ -6,7 +6,7 @@ import 'swiper/swiper-bundle.css';
 import './Navigation.css';
 
 export default function Navigation() {
-    let [state, setState] = useState([
+    let [state] = useState([
         ["/asserts/swiper_one.png"],
         ["/asserts/swiper_two.png"],
         ["/asserts/swiper_three.png"]

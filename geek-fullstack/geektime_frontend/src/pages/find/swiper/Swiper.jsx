@@ -1,10 +1,11 @@
 import React, { useState,useEffect} from 'react'
 import Swiper from 'swiper/bundle'
 import './Swiper.css';  
+import 'swiper/swiper-bundle.css'; 
 import 'swiper/swiper-bundle.cjs'
 
 export default function MySwiper() {
-    let [state] = useState([
+    const [state, setState] = useState([
         ["/swiper1.png"],
         ["/swiper2.png"],
         ["/swiper3.png"]

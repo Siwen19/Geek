@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react'
-import { NavContent, TabBar } from './style'
-import { NavLink, useParams, useLocation, useRouteMatch } from 'react-router-dom'
+import React, { useState } from 'react'
+import { NavContent } from './style'
+import { NavLink, useParams } from 'react-router-dom'
 import { renderRoutes } from 'react-router-config';
 import Introduction from './introduction/index';
 import Catalogue from './category/index';
@@ -9,8 +9,7 @@ import Comment from './comment/index';
 
 function Nav (props) {
   const { id } = useParams();
-  const [state, setState] = useState([<Introduction id={id} key={id} />]);
-  console.log(state)
+  const [state, setState] = useState([<Introduction id={id} key={id} />]); 
   const handleClick = (str, e) => {
       for (let child of e.target.parentNode.childNodes) {
           child.className = ''

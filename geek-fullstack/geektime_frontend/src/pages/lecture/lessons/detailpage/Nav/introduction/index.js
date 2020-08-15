@@ -7,8 +7,8 @@ function Introduction(props) {
   const { introContent, id } = props;
   const { getIntroDataDispatch } = props; 
   useEffect(() => {
-    if (!introContent.length) getIntroDataDispatch(id);
-  }, []);
+    getIntroDataDispatch(id);
+  }, []); 
   return (
     <IntroductionWrap>
       <div>
