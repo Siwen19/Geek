@@ -13,6 +13,7 @@ import {
   CHANGE_CATALOGUE_CONTENT,
   CHANGE_RECOMMEND_CONTENT,
   CHANGE_COMMENT_CONTENT,
+  CHANGE_ORDER_TYPE
 } from "./constants";
 
 export const getTitleContent = () => {
@@ -117,6 +118,12 @@ export const changeRecommendContent = (data) => {
 export const changeCommentContent = (data) => {
   return {
     type: CHANGE_COMMENT_CONTENT,
+    data,
+  };
+};
+export const changeOrderType = (data) => {
+  return {
+    type: CHANGE_ORDER_TYPE,
     data,
   };
 };

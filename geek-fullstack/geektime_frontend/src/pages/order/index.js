@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./index.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import * as actionTypes from "../homepage/account/store/actions";
 
-function Order() {
+function Order(props) {
+  const { titleContent, orderType, userMoney, getUserMoneyDispatch } = props;
+  const [visible, setVisibility] = useState("hidden");
+  const [paymethod, setPayMethod] = useState("wechat");
+  const [psdvisible, setpsdVisible] = useState("hidden");
+  const [currentMoney, setCurrentMoney] = useState(0);
+
+  useEffect(() => {
+    if (orderType === 0) {
+      setCurrentMoney(titleContent.extra.first_promo.price / 100);
+    } else {
+      setCurrentMoney(titleContent.price.market / 100);
+    }
+  }, []);
+  const handleCostMoney = () => {
+    if (currentMoney < userMoney) return getUserMoneyDispatch(currentMoney);
+  };
   return (
     <div className="wrapper">
       <div className="wrapper-head">
@@ -24,12 +42,19 @@ function Order() {
       <div className="wrapper-account">
         <ul className="class-list">
           <li>
-            <img src="https://static001.geekbang.org/resource/image/2b/2d/2b98f1258ce0cf6d26cc7a281a67872d.jpg?x-oss-process=image/resize,m_fill,h_80,w_80" />
+            <img src={titleContent.author.avatar} />
             <dl>
-              <dt>Redis核心技术与实战</dt>
-              <dd className="item-subtitle">50讲 | 5813人已学习</dd>
+              <dt>{titleContent.title}</dt>
+              <dd className="item-subtitle">
+                {titleContent.unit} | {titleContent.extra.sub.count}人已学习
+              </dd>
               <dd className="item-price">
-                <div className="price">¥ 29.90</div>
+                <div className="price">
+                  ¥
+                  {orderType === 0
+                    ? titleContent.extra.first_promo.price / 100
+                    : titleContent.price.market / 100}
+                </div>
                 <span className="item-count">×1</span>
               </dd>
             </dl>
@@ -40,10 +65,10 @@ function Order() {
         <div className="checkout-price">
           <span>总计:</span>
           <span className="price">
-            <i className="iconfont">
-              ¥
-            </i>
-            29.90
+            <i className="iconfont">¥</i>
+            {orderType === 0
+              ? titleContent.extra.first_promo.price / 100
+              : titleContent.price.market / 100}
           </span>
         </div>
       </div>
@@ -51,18 +76,89 @@ function Order() {
         <h3 className="pay-method-h3">当前支付方式</h3>
         <div className="method-list-item">
           <span>
-            <img src="/wechat.png" />
+            {paymethod === "wechat" ? (
+              <img src="/wechat.png" />
+            ) : (
+              <img src="/alipay.png" />
+            )}
             <div className="pay-method-text">
-              <p>微信支付</p>
+              <p>{paymethod === "wechat" ? "微信支付" : "支付宝支付"}</p>
             </div>
           </span>
           <div className="checkbox">
             <img src="/success.png" />
           </div>
         </div>
-        <div className="choose-other-pay">
+        <div
+          className="choose-other-pay"
+          onClick={() => setVisibility("visible")}
+        >
           <div className="choose-label">选择其他支付方式</div>
           <img src="/asserts/right.png" />
+        </div>
+        <div className="fixed-layer" style={{ visibility: `${visible}` }}>
+          <div className="payment-methods-panel">
+            <h6>选择支付方式</h6>
+            <div className="pay-methods">
+              <div className="method-list">
+                <div
+                  className="method-list-item"
+                  onClick={() => {
+                    setPayMethod("wechat");
+                    setVisibility("hidden");
+                  }}
+                >
+                  <span>
+                    <img src="/wechat.png" />
+                    <span className="pay-method-text">微信支付</span>
+                  </span>
+                  <div
+                    className="_19OCs7r0awRc9fQGclUVsh_0"
+                    check-alias="weixin"
+                  >
+                    <div className="_3gtsaSTR1gESwSnLdhq8yC_0">
+                      {paymethod === "wechat" ? (
+                        <img src="/success.png" />
+                      ) : (
+                        <img src="/circle.png" />
+                      )}
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="method-list-item"
+                  onClick={() => {
+                    setPayMethod("alipay");
+                    setVisibility("hidden");
+                  }}
+                >
+                  <span>
+                    <img src="/alipay.png" />
+                    <span className="pay-method-text">支付宝支付</span>
+                  </span>
+                  <div
+                    checked="checked"
+                    className="_19OCs7r0awRc9fQGclUVsh_0"
+                    check-alias="alipay"
+                  >
+                    <div className="_3gtsaSTR1gESwSnLdhq8yC_0">
+                      {paymethod === "alipay" ? (
+                        <img src="/success.png" />
+                      ) : (
+                        <img src="/circle.png" />
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="cancel-choose"
+              onClick={() => setVisibility("hidden")}
+            >
+              取消
+            </div>
+          </div>
         </div>
       </div>
       <p className="coupon-rules">
@@ -71,19 +167,63 @@ function Order() {
       <p className="current-user">
         <span>
           当前登录账号：150****6221
-          <a style={{color: "#fa8919"}}>
-            切换账号
-          </a>
+          <a style={{ color: "#fa8919" }}>切换账号</a>
         </span>
       </p>
-      <div className="bottom">
-        <div 
-          className="primary" 
-        >
-          ¥29.90 确认支付
+      <div
+        className="bottom"
+        onClick={() => {
+          setpsdVisible("visible");
+        }}
+      >
+        <div className="primary">
+          ¥
+          {orderType === 0
+            ? titleContent.extra.first_promo.price / 100
+            : titleContent.price.market / 100}
+          确认支付
+        </div>
+        <div className="fixed-layer" style={{ visibility: `${psdvisible}` }}>
+          <div className="password-box">
+            {parseFloat(currentMoney) > parseFloat(userMoney) ? (
+              <span>
+                余额不足,
+                <Link to="/account" style={{ color: "#fa8919" }}>
+                  前去充值
+                </Link>
+              </span>
+            ) : (
+              <span>
+                支付成功,
+                <Link
+                  to="/user"
+                  style={{ color: "#fa8919" }}
+                  onClick={() => handleCostMoney()}
+                >
+                  查看我的账户
+                </Link>
+              </span>
+            )}
+          </div>
         </div>
       </div>
     </div>
   );
 }
-export default Order;
+const mapStateToProps = (state) => {
+  return {
+    titleContent: state.personColumn.titleContent,
+    orderType: state.personColumn.orderType,
+    userMoney: state.investMoney.money,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getUserMoneyDispatch(data) {
+      dispatch(actionTypes.costMoney(data));
+    },
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(React.memo(Order));

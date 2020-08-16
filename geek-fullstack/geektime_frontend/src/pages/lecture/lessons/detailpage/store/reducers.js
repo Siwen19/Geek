@@ -5,6 +5,7 @@ import {
   CHANGE_CATALOGUE_CONTENT,
   CHANGE_RECOMMEND_CONTENT,
   CHANGE_COMMENT_CONTENT,
+  CHANGE_ORDER_TYPE
 } from "./constants";
 
 const defaultContent = {
@@ -13,7 +14,8 @@ const defaultContent = {
     introContent: [],
     catalogContent: [],
     recommendContent: [],
-    commentContent: []
+    commentContent: [],
+    orderType: 0
 }
 
 export default (state = defaultContent, action) => {
@@ -30,6 +32,8 @@ export default (state = defaultContent, action) => {
             return {...state, recommendContent: action.data}
         case CHANGE_COMMENT_CONTENT:
             return {...state, commentContent: action.data}
+        case CHANGE_ORDER_TYPE: 
+        return {...state, orderType: action.data}
         default:
             return state;
     }

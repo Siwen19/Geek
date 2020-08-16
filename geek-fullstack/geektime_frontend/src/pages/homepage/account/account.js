@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Container,
   Head,
@@ -13,24 +13,22 @@ import {
 import { connect } from "react-redux";
 import { changeDefaultMoney } from "./store/actions";
 import { CSSTransition } from "react-transition-group";
+import { Link } from "react-router-dom";
 
 function Account(props) {
   const [state, setState] = useState("");
-  const { investMoney, changeInvestMoney } = props;
-  const onBack = useCallback(() => {
-    window.history.back();
-  }, []);
+  const { investMoney, changeInvestMoney } = props; 
   const handleClickEvent = (e) => {
     if (e.target.id) {
-      for (let child of e.target.parentNode.childNodes) { 
+      for (let child of e.target.parentNode.childNodes) {
         child.style.backgroundColor = "rgb(247, 247, 247)";
-      } 
+      }
       e.target.style.backgroundColor = "orange";
       setState(e.target.id);
     }
   };
   const handleInvestMoney = () => {
-    let wrapper = document.querySelector(".wrapper");
+    let wrapper = document.querySelector(".wrap");
     for (let child of wrapper.childNodes) {
       child.style.backgroundColor = "rgb(247, 247, 247)";
     }
@@ -48,18 +46,20 @@ function Account(props) {
       unmountOnExit
     >
       <Container>
-        <Head>
-          <svg width="42" height="42" onClick={onBack}>
-            <polyline
-              points="25, 13 16, 21 25, 29"
-              stroke="#ccc"
-              strokeWidth="2"
-              fill="none"
-            />
-          </svg>
-          <span>账户</span>
-          <span>兑换入口</span>
-        </Head>
+        <Link to="/user">
+          <Head>
+            <svg width="42" height="42">
+              <polyline
+                points="25, 13 16, 21 25, 29"
+                stroke="#ccc"
+                strokeWidth="2"
+                fill="none"
+              />
+            </svg>
+            <span>账户</span>
+            <span>兑换入口</span>
+          </Head>
+        </Link>
         <Nav>
           <NavHead>
             <span>{investMoney}</span>
@@ -74,7 +74,7 @@ function Account(props) {
           <p>
             充值<span>（充值金额仅限Android系统使用）</span>
           </p>
-          <Content onClick={handleClickEvent} className="wrapper">
+          <Content onClick={handleClickEvent} className="wrap">
             <Center id="6">$ 6</Center>
             <Center id="12">$ 12</Center>
             <Center id="68">$ 68</Center>

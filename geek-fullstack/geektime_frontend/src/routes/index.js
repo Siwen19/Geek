@@ -97,18 +97,16 @@ export default  [
               },
               {
                 path: '/user',
-                component: SuspenseComponent(UserLayout),
-                routes: [
-                  {
-                    path: '/user/account',
-                    component: SuspenseComponent(Account)
-                  }
-                ] 
+                component: SuspenseComponent(UserLayout), 
               },
               {
                 path: '/payment',
                 component: SuspenseComponent(PaymentTable),
-              }
+              },
+              {
+                path: '/account',
+                component: SuspenseComponent(Account),
+              }, 
           ]
         }
       ]

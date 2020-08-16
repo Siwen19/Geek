@@ -172,3 +172,88 @@
   justify-content: center;
   font-size: 18px;
 }
+.wrapper .fixed-layer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.62);
+}
+.wrapper .payment-methods-panel {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 11;
+  margin-bottom: 0;
+  background: #fff;
+  border-radius: 10px 10px 0 0;
+  transform: translateY(0);
+}
+.wrapper .payment-methods-panel h6 {
+  height: 54px;
+  border-bottom: 1px solid #f5f5f5;
+  line-height: 54px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+}
+.wrapper .pay-methods {
+  background: #fff;
+}
+.wrapper .pay-methods .method-list-item {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 15px 8px 0;
+  margin-left: 15px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9375rem;
+}
+.wrapper .pay-methods .method-list-item span {
+  display: flex;
+  color: #333;
+  width: 40vw;
+  font-size: 16px;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 400;
+}
+.wrapper .pay-methods .method-list-item .pay-method-text {
+  margin-left: 20%;
+}
+.wrapper ._19OCs7r0awRc9fQGclUVsh_0 {
+  display: flex;
+  height: 20px;
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #353535;
+  user-select: none;
+}
+.wrapper ._3gtsaSTR1gESwSnLdhq8yC_0 img {
+  width: 20px;
+  height: 20px;
+}
+.wrapper .cancel-choose {
+  margin-left: 12px;
+  border-top: 1px solid #f5f5f5;
+  line-height: 40px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  color: #353535;
+}
+.wrapper .password-box {
+  position: fixed;
+  width: 5.125rem /* 50/16 */;
+  font-size: 16px;
+  line-height: 10vh;
+  margin: 35vh 25vw;
+  padding: 8px 15px;
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
+}

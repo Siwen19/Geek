@@ -10,8 +10,7 @@ import { forceCheck } from "react-lazyload";
 import Scroll from "../../../components/scroll/Scroll";
 import Loading from "../../../baseUI/loading/index";
 
-function Lessons(props) {
-    console.log(props)
+function Lessons(props) {  
     const {
         route,
         studyPath,

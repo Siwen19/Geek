@@ -7,7 +7,7 @@ import {
 import { NavLink } from 'react-router-dom'; 
 import  LazyLoad from 'react-lazyload';
 
-export default function Item(props) {
+export default function Item(props) { 
     const { data } = props;  
     return (
         <NavLink id={data.id} to={`/lecture/lessons/${data.id}`} style={{ color: "#fa8919" }}>

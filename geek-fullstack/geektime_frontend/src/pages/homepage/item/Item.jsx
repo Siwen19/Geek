@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import './Item.css';
-import { NavLink } from 'react-router-dom';
-import { renderRoutes } from 'react-router-config';
+import { NavLink } from 'react-router-dom'; 
 
 export default function Item(props) {
     const { data, remain } = props;
     return (
-        <NavLink to={`/user/${data.id}`}>
+        <NavLink to={`/${data.id}`}>
             <div className="content-wrapper" id={data.id}>
                 <img src={`/asserts/${data.image}.png`} alt="" className="data-image" />
                 <div className="data-title" id={data.id}>
