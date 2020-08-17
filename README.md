@@ -3,7 +3,9 @@
 
 总体效果：
 
-![](https://github.com/Siwen19/Geek/blob/master/Geek_Time.gif)
+<img src="https://github.com/Siwen19/Geek/blob/master/images/Geek_Time.gif" />
+
+![image](https://github.com/Siwen19/Geek/blob/master/images/Geek_Time.gif)
 
 打开方式：
 
@@ -36,13 +38,13 @@ $ npm start
 ## 功能介绍
 #### 1. 路由部分
 
-![](https://github.com/Siwen19/Geek/blob/master/images/route.gif)
+![image](https://github.com/Siwen19/Geek/blob/master/images/route.gif)
 
 空中切入切出效果，另外还有随着滑动会产生和标题跑马灯效果。 在歌单中歌曲数量过多的情况下，做了分页处理，随着滚动不断进行上拉加载，防止大量DOM加载导致的页面卡顿
 
 #### 2. 学习路径部分
 
-![](https://github.com/Siwen19/Geek/blob/master/images/learnpath.gif)
+![image](https://github.com/Siwen19/Geek/blob/master/images/learnpath.gif)
 #### 3. 课程列表部分
 
 ![](https://github.com/Siwen19/Geek/blob/master/images/lazyload.gif)
@@ -242,7 +244,7 @@ function LoadingV2() {
 export default LoadingV2;
 ```
 
-![](https://github.com/Siwen19/Geek/blob/master/images/loading.gif)
+![image](https://github.com/Siwen19/Geek/blob/master/images/loading.gif)
 
 ### 3、模块懒加载及代码分割(CodeSpliting)
 react官方已经提供了相应的方案, 用react自带的lazy和Suspense即可完成。 操作如下:
