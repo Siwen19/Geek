@@ -3,7 +3,7 @@
 
 总体效果：
 
-![](https://github.com/Siwen19/Geek/images/Geek_Time.gif)
+![](https://github.com/Siwen19/Geek/blob/master/images/Geek_Time.gif)
 
 打开方式：
 
@@ -36,24 +36,23 @@ $ npm start
 ## 功能介绍
 #### 1. 路由部分
 
-![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8250c1a146e640bbbb7d699e3717edfe~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://github.com/Siwen19/Geek/blob/master/images/route.gif)
 
 空中切入切出效果，另外还有随着滑动会产生和标题跑马灯效果。 在歌单中歌曲数量过多的情况下，做了分页处理，随着滚动不断进行上拉加载，防止大量DOM加载导致的页面卡顿
 
 #### 2. 学习路径部分
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7fdb116236f64b918fa7bef0d9c7ed0d~tplv-k3u1fbpfcp-zoom-1.image)
-
+![](https://github.com/Siwen19/Geek/blob/master/images/learnpath.gif)
 #### 3. 课程列表部分
 
-![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3949266271544da08d67fa8de9a21a93~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://github.com/Siwen19/Geek/blob/master/images/lazyload.gif)
 
 
 这里做了异步加载的处理，上拉到底进行新数据的获取，下拉则进行数据的重新加载
 
 课程详情：
 
-![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d239905b79f84ada9700e2ec89886b95~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://github.com/Siwen19/Geek/blob/master/images/classdetail.gif)
 
 这里做了空中切入效果，并且增加了下订单，购买课程功能
 
@@ -243,7 +242,7 @@ function LoadingV2() {
 export default LoadingV2;
 ```
 
-![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5a3d8a85136946f5af1d03a22aee3b50~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://github.com/Siwen19/Geek/blob/master/images/loading.gif)
 
 ### 3、模块懒加载及代码分割(CodeSpliting)
 react官方已经提供了相应的方案, 用react自带的lazy和Suspense即可完成。 操作如下:
