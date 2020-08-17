@@ -3,7 +3,7 @@
 
 总体效果：
 
-![](https://github.com/Siwen19/Geek/blob/master/images/Geek_Time.gif)
+![](https://github.com/Siwen19/Geek/blob/master/Geek_Time.gif)
 
 打开方式：
 
