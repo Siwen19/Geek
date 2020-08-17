@@ -3,7 +3,7 @@
 
 总体效果：
 
-![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/05512cb70a1c42a0842181065f353b2a~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://github.com/Siwen19/Geek/images/Geek_Time.gif)
 
 打开方式：
 
