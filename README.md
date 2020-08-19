@@ -1,8 +1,10 @@
 # react hooks+redux 仿极客时间打造逼真webApp
+
 移动端的chrome浏览器效果更佳 : )
 
 总体效果： 
-<img src="https://github.com/Siwen19/Geek/blob/master/images/Geek_Time.gif" width="300px" height="450px"> 
+
+<img src="https://github.com/Siwen19/Geek/blob/master/images/Geek_Time.gif" width="300px" height="450px">
 
 打开方式：
 
@@ -242,7 +244,7 @@ function LoadingV2() {
 export default LoadingV2;
 ```
 
-<img src="https://github.com/Siwen19/Geek/blob/master/images/loading.gif" width="300px" height="450px">   
+<img src="https://github.com/Siwen19/Geek/blob/master/images/loading.gif" width="300px" height="100px">   
 
 ### 3、模块懒加载及代码分割(CodeSpliting)
 react官方已经提供了相应的方案, 用react自带的lazy和Suspense即可完成。 操作如下:
