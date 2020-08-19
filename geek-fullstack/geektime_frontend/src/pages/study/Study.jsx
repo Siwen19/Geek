@@ -3,21 +3,32 @@ import './Study.css';
 import Header from './header/Header';
 import Practice from './practice/Practice';
 import Lessons from './lessons/Lessons'
-import Perclass from './per-class/Perclass'
+import Perclass from './per-class/Perclass';
+import styled from 'styled-components';
+import Scroll from '../../components/scroll/Scroll';
+
+export const Content = styled.div`
+  position: fixed;
+  top: 25%;
+  bottom: 0;  
+  width: 100%;
+`
+
 function Study() {
     const [studyList, setState] = useState([]);
     useEffect(() => {
         fetch('http://localhost:8080/study/study.json')
             .then(data => data.json())
             .then(res => setState(res))  
-    }, []);
-    // console.log(studyList);
+    }, []); 
     const newPractice = studyList.practice !== undefined ? studyList.practice : [];
     const newLessons = studyList.lessons !== undefined ? studyList.lessons : [];
     const newPerClass = studyList.perclass !== undefined ? studyList.perclass : [];
     return (
         <div className="study-wrapped"> 
             <Header />
+            <Content>
+                <Scroll>
             <div className="study-contents">
                 <div className="study-contents-title">正在学习</div>
                 <div className="type">训练营</div>
@@ -33,7 +44,8 @@ function Study() {
                     {newPerClass.map((ele, i) => <Perclass key={i} pclass={ele}/>)}
                 </div>
             </div>
-            
+            </Scroll>
+            </Content>
         </div>
     )
 }

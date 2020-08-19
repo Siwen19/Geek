@@ -5,7 +5,7 @@ export default function Lessons(props) {
     return (
         <div className="lessons-wrapper">
             <div className="les-img">
-                <img src={`/asserts/study-images/${l.image}.png`} alt="" className="l-image" />
+                <img src={`study-images/${l.image}.png`} alt="" className="l-image" />
             </div>
             <div className="les-info">
                 <div className="lessons-title">{l.title}</div>

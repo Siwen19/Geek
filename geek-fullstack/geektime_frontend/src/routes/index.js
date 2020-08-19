@@ -16,6 +16,7 @@ const CampLayout = lazy(() => import("../pages/lecture/camp/index"));
 const FindLayout = lazy(() => import("../pages/find/Find"));
 const FootLayout = lazy(() => import("../components/foot/Foot"));
 const UserLayout = lazy(() => import("../pages/homepage/HomePage"));
+const HordeLayout = lazy(() => import("../pages/horde/Horde"))
 const Header = lazy(() => import("../pages/lecture/lessons/header/Header"));
 const StudyLayout = lazy(() => import("../pages/study/Study"));
 const Account = lazy(() => import("../pages/homepage/account/account"));
@@ -90,6 +91,10 @@ export default  [
                     component: SuspenseComponent(DailyLayout)
                   },
                 ] 
+              },
+              {
+                path: '/horde',
+                component: SuspenseComponent(HordeLayout)
               },
               {
                 path: '/study',

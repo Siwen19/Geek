@@ -6,7 +6,7 @@ export default function (props) {
     return (
         <div className="pclass-wrapper">
             <div className="les-img">
-                <img src={`/asserts/study-images/${pclass.image}.png`} alt="" className="pclass-image" />
+                <img src={`study-images/${pclass.image}.png`} alt="" className="pclass-image" />
             </div>
             <div className="pcl-info">
                 <div className="perclass-title">{pclass.title}</div>

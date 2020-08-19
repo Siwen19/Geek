@@ -1,7 +1,10 @@
-.study-contents {
-    margin-top: 110px;
+.study-contents { 
+  font-family: PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, Helvetica, sans-serif;
+    margin-top: 10px;
+    padding-top: 10px;
     background-color:white;
-    height: 500px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; 
     overflow: scroll;
 }
 

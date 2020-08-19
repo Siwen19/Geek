@@ -2,15 +2,15 @@ import React from 'react'
 import './Header.css'
 export default function Header() {
     return (
-        <div className="header-wrapper">
+        <div className="Header-Wrapper">
             <div className="header-title">
                 <div className="header-title-text">我的学习</div>
-                <span className="iconfont">&#xe648;</span>
+                <img src="study-images/clock.png"/>
             </div>
 
             <div className="header-content">
                 <div className="header-content-text">本周时长 0 小时 1 分钟</div>
-                <svg width="20" height="20" className="header-content-svg">
+                <svg width="20" height="20" className="header-content-svg" style={{marginLeft: "75%"}}>
                     <polyline
                     points="5,5 15,10 5,15"
                     stroke="black"

@@ -7,7 +7,7 @@ export default function Practice(props) {
     return (
         <div className="practice-wrapper">
             <div className="pra-img">
-                <img src={`/asserts/study-images/${p.image}.png`} alt="" className="p-image" />
+                <img src={`study-images/${p.image}.png`} alt="" className="p-image" />
             </div>
             <div className="pra-info">
                 <div className="practice-title">{p.title}</div>

@@ -1,0 +1,65 @@
+
+.horde-container {
+    height: 700px;
+    overflow: scroll;
+  font-family: PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, Helvetica, sans-serif;
+}
+.horde-content {
+    margin-top: 10px;
+}
+
+.horde-content1 {
+    display: flex;
+    position: relative;
+    margin-bottom: 15px;
+}
+.horde1-img{
+    margin-left: 12px;
+}
+.horde1-title {
+    margin-top: 14px;
+    margin-left: 15px;
+}
+
+.horde1-attention {
+    color: #fff; 
+    background-color: rgb(249,153,58);
+    height: 25px;
+    /* width: 50px; */
+    padding: 2px 5px;
+    position: absolute;
+    right: 12px;
+    margin-top: 14px;
+    border-radius: 4px;
+}
+
+.horde2-img{
+    margin-left: 12px;
+}
+
+.horde3-img{
+    margin-left: 12px;
+}
+
+.horde4-img{
+    margin-left: 12px;
+}
+
+.horde5-img{
+    margin-left: 12px;
+}
+
+.button {
+    background-color: rgb(249,153,58);
+    color: #fff;
+    margin-left: 88px;
+    margin-top: 60px;
+    width: 200px;
+    height: 35px;
+    display: flex;
+    border-radius: 4px;
+}
+
+.button-text {
+    margin:5px auto;
+}
