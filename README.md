@@ -1,9 +1,7 @@
 # react hooks+redux 仿极客时间打造逼真webApp
 移动端的chrome浏览器效果更佳 : )
 
-总体效果：
-
-<img src="https://github.com/Siwen19/Geek/blob/master/images/Geek_Time.gif" />
+总体效果： 
 
 ![image](https://github.com/Siwen19/Geek/blob/master/images/Geek_Time.gif)
 
