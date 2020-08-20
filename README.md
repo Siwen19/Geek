@@ -37,7 +37,7 @@ $ npm start
 ## 功能介绍
 #### 1. 路由部分
 
-<img src="https://github.com/Siwen19/Geek/blob/master/images/route.gif" width="300px" height="450px">
+<img src="https://github.com/Siwen19/Geek/blob/master/images/route.gif" width="250px" height="450px">
 
 空中切入切出效果，另外还有随着滑动会产生和标题跑马灯效果。 在歌单中歌曲数量过多的情况下，做了分页处理，随着滚动不断进行上拉加载，防止大量DOM加载导致的页面卡顿
 
