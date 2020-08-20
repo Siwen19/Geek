@@ -36,40 +36,25 @@ $ npm start
 
 ## 功能介绍
 #### 1. 路由部分
-
-<<<<<<< HEAD
-![](https://github.com/Siwen19/Geek/blob/master/images/route.gif)
-=======
-<img src="https://github.com/Siwen19/Geek/blob/master/images/route.gif" width="300px" height="450px">
->>>>>>> 3feed646453fa890edcc2a01345638a7f974cb99
+ 
+<img src="https://github.com/Siwen19/Geek/blob/master/images/route.gif" width="300px" height="450px"> 
 
 空中切入切出效果，另外还有随着滑动会产生和标题跑马灯效果。 在歌单中歌曲数量过多的情况下，做了分页处理，随着滚动不断进行上拉加载，防止大量DOM加载导致的页面卡顿
 
-#### 2. 学习路径部分
+#### 2. 学习路径部分 
 
-<<<<<<< HEAD
-![](https://github.com/Siwen19/Geek/blob/master/images/learnpath.gif)
-#### 3. 课程列表部分
-
-![](https://github.com/Siwen19/Geek/blob/master/images/lazyload.gif)
-=======
 <img src="https://github.com/Siwen19/Geek/blob/master/images/learnpath.gif" width="300px" height="450px"> 
 
 #### 3. 课程列表部分
 
-<img src="https://github.com/Siwen19/Geek/blob/master/images/lazyload.gif" width="300px" height="450px">  
->>>>>>> 3feed646453fa890edcc2a01345638a7f974cb99
+<img src="https://github.com/Siwen19/Geek/blob/master/images/lazyload.gif" width="300px" height="450px">   
 
 
 这里做了异步加载的处理，上拉到底进行新数据的获取，下拉则进行数据的重新加载
 
-课程详情：
+课程详情： 
 
-<<<<<<< HEAD
-![](https://github.com/Siwen19/Geek/blob/master/images/classdetail.gif)
-=======
-<img src="https://github.com/Siwen19/Geek/blob/master/images/classdetail.gif" width="300px" height="450px">  
->>>>>>> 3feed646453fa890edcc2a01345638a7f974cb99
+<img src="https://github.com/Siwen19/Geek/blob/master/images/classdetail.gif" width="300px" height="450px">   
 
 这里做了空中切入效果，并且增加了下订单，购买课程功能
 
@@ -257,13 +242,8 @@ function LoadingV2() {
 }
  
 export default LoadingV2;
-```
-
-<<<<<<< HEAD
-![](https://github.com/Siwen19/Geek/blob/master/images/loading.gif)
-=======
-<img src="https://github.com/Siwen19/Geek/blob/master/images/loading.gif" width="300px" height="100px">   
->>>>>>> 3feed646453fa890edcc2a01345638a7f974cb99
+``` 
+<img src="https://github.com/Siwen19/Geek/blob/master/images/loading.gif" width="300px" height="100px">    
 
 ### 3、模块懒加载及代码分割(CodeSpliting)
 react官方已经提供了相应的方案, 用react自带的lazy和Suspense即可完成。 操作如下:
